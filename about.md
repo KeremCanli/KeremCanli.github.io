@@ -4,12 +4,8 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+İstanbul Üniversitesi 3. sınıf öğrencisiyim.
 
-### More Information
+### İletişim
 
-A place to include any other types of information that you'd like to include about yourself.
-
-### Contact me
-
-[email@domain.com](mailto:email@domain.com)
+[kerem_canl1@hotmail.com](mailto:kerem_canl1@hotmail.com)
