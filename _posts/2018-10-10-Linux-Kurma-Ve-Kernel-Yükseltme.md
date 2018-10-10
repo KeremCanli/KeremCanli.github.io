@@ -5,6 +5,7 @@ title: Linux Kurma Ve Kernel Yükseltme
 
 Merhabalar. Bu postta sizlere sanal makine üzerinde Ubuntu kurmayı ve kernel yükseltmeyi anlatacağım.
 
+
 ![_config.yml]({{ site.baseurl }}/images/1.png)
 
 En güncel Ubuntu sürümü olan 18.04.1 kurulumunu sanal makine üzerinde başlatıyoruz.
