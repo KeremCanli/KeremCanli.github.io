@@ -112,3 +112,4 @@ Tekrar make bzImage komutunu kullanıyoruz.
 ![_config.yml]({{ site.baseurl }}/images/57.png)
   Tekrar uname –r komutunu kullanıyoruz.
 ![_config.yml]({{ site.baseurl }}/images/58.png)
+ 
