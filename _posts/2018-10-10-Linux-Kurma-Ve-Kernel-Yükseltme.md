@@ -5,7 +5,9 @@ title: Linux Kurma Ve Kernel Yükseltme
 
 
 ![_config.yml]({{ site.baseurl }}/images/1.png)
+
 Ubuntu 18.04.1 kurulumunu sanal makine üzerinde başlatıyoruz.
+
 ![_config.yml]({{ site.baseurl }}/images/2.png)
 ![_config.yml]({{ site.baseurl }}/images/3.png)
 Herhangi bir problem olabilir diye güncellemeleri sonra yapmayı tercih edebilirsiniz.
