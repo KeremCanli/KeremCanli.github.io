@@ -3,6 +3,7 @@ layout: post
 title: Linux Kurma Ve Kernel Yükseltme
 ---
 
+Merhabalar. Bu postta sizlere sanal makine üzerinde Ubuntu kurmayı ve kernel yükseltmeyi anlatacağım.
 
 ![_config.yml]({{ site.baseurl }}/images/1.png)
 
