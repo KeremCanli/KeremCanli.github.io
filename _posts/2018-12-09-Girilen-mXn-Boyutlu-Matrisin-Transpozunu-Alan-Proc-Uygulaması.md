@@ -160,7 +160,8 @@ static struct file_operations FileOperations={.open=Open,
 static int __init InitMatrixTransposer (void) // Modül yüklendiğinde çalışacak fonksiyon.
     {
         printk (KERN_INFO "Module MatrixTransposer loaded.\n");
- 	ProcDirEntry=proc_create (ProcName, 0644, NULL, &FileOperations); // Proc dosyasını yaratır.
+ 	ProcDirEntry=proc_create (ProcName, 0644, NULL, &FileOperations); // Proc dosyasını
+yaratır.
  	if (ProcDirEntry==NULL) // Proc dosyasının yaratılıp yaratılmadığı kontrol eder.
 	    {
   	        printk (KERN_INFO "Proc MatrixTransposer did not create.\n");
