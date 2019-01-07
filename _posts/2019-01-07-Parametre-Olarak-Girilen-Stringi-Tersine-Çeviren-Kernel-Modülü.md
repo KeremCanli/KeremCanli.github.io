@@ -14,7 +14,8 @@ Merhabalar. Bu modülü oluşturmak için gerekli c dosyası ve Makefile dosyas�
 MODULE_LICENSE ("GPL");
 MODULE_AUTHOR ("Module5.ko");
 static char *String; // Parametre olarak girilen string i tutar.
-module_param (String, charp, 0000); // Parametre almak için kullanılan, değişken adı, değişken türü, verilecek izinleri parametre olarak alan fonksiyon.
+module_param (String, charp, 0000); // Parametre almak için kullanılan, değişken adı, değişken
+türü, verilecek izinleri parametre olarak alan fonksiyon.
 MODULE_PARM_DESC (String, "This variable's value will reverse.");
 static int __init StringReverserInit (void) // Modül yüklendiğinde çalışacak fonksiyon.
     {
