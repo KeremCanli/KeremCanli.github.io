@@ -189,7 +189,7 @@ clean:
 	<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/MatrixTransposer/1.JPG"/>
 	<br/>
 	<br/>
-	<li></li>
+	<li><strong>make</strong> komutu ile modülü derliyoruz.</li>
 	<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/MatrixTransposer/2.JPG"/>
 	<br/>
 	<br/>
