@@ -48,4 +48,4 @@ clean:
 	<br/>
 	<li>Modülü yüklemek için c ve Makefile dosyasının bulunduğu dizinde terminali açıp yönetici izini alıyoruz.</li>
 	
-![_config.yml]({{ site.baseurl }}/images/1.PNG)
+![_config.yml]({{ site.baseurl }}/images/1.png)
