@@ -5,8 +5,7 @@ title: Parametre Olarak Girilen Stringi Tersine Çeviren Kernel Modülü
 <ul>
 	<li>Modülü oluşturmak için gerekli c ve Makefile dosyası kodları aşağıdaki gibidir.</li>
 	<h3>StringReverser.c</h3>
-	<pre>
-#include <linux/module.h>
+	<pre>#include <linux/module.h>
 #include <linux/kernel.h>
 #include <linux/init.h>
 #include <linux/moduleparam.h>
@@ -39,8 +38,7 @@ static void __exit StringReverserExit (void) // Modül kaldırıldığında çal
         printk (KERN_INFO "Module StringReverser removed.\n");
     }
 module_init (StringReverserInit);
-module_exit (StringReverserExit);
-	</pre>
+module_exit (StringReverserExit);</pre>
 	<h3>Makefile</h3>
 	<pre>
 obj-m += StringReverser.o
