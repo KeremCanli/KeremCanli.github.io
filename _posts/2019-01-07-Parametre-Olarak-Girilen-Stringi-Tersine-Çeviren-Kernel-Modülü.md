@@ -18,18 +18,18 @@ module_param (String, charp, 0000); // Parametre almak için kullanılan, deği�
 MODULE_PARM_DESC (String, "This variable's value will reverse.");<br/>
 static int __init StringReverserInit (void) // Modül yüklendiğinde çalışacak fonksiyon.<br/>
 	{<br/>
-		char Temporary;
-		int i=0;
-    int j=strlen (String)-1; // Parametre olarak girilen string in uzunluğunun 1 eksiğini tutar.
-		printk (KERN_INFO "Module StringReverser loaded.\n");
-		printk (KERN_INFO "String: %s\n", String);
-    while (i<j) // Ters çevirme işlemleri gerçekleşir.
-		  {
-		    Temporary=String[i];
-		    String[i]=String[j];
-		    String[j]=Temporary;
-		    i++;
-		    j--;
+		char Temporary;<br/>
+		int i=0;<br/>
+    int j=strlen (String)-1; // Parametre olarak girilen string in uzunluğunun 1 eksiğini tutar.<br/>
+		printk (KERN_INFO "Module StringReverser loaded.\n");<br/>
+		printk (KERN_INFO "String: %s\n", String);<br/>
+    while (i<j) // Ters çevirme işlemleri gerçekleşir.<br/>
+			{<br/>
+		  	Temporary=String[i];<br/>
+		    String[i]=String[j];<br/>
+		    String[j]=Temporary;<br/>
+		    i++;<br/>
+		    j--;<br/>
 			}
 		printk (KERN_INFO "Reversed String: %s\n", String);
 		return 0;
