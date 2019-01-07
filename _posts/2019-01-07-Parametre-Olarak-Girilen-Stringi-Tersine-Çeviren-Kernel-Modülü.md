@@ -17,8 +17,8 @@ static char *String; // Parametre olarak girilen string i tutar.<br/>
 module_param (String, charp, 0000); // Parametre almak için kullanılan, değişken adı, değişken türü, verilecek izinleri parametre olarak alan fonksiyon.<br/>
 MODULE_PARM_DESC (String, "This variable's value will reverse.");<br/>
 static int __init StringReverserInit (void) // Modül yüklendiğinde çalışacak fonksiyon.<br/>
-  {
-	  char Temporary;
+	{<br/>
+		char Temporary;
 		int i=0;
     int j=strlen (String)-1; // Parametre olarak girilen string in uzunluğunun 1 eksiğini tutar.
 		printk (KERN_INFO "Module StringReverser loaded.\n");
