@@ -47,18 +47,4 @@ clean:
 	make -C /lib/modules/$(shell uname -r)/build M=$(PWD) clean</pre>
 	<br/>
 	<li>Modülü yüklemek için c ve Makefile dosyasının bulunduğu dizinde terminali açıp yönetici izini alıyoruz.</li>
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-![_config.yml]({{ site.baseurl }}/images/1.png)
+	<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/1.png"/>
