@@ -8,15 +8,15 @@ Merhabalar. Bu modülü oluşturmak için gerekli c dosyası ve Makefile dosyas�
 StringReverser.c
 
 #include <linux/module.h><br/>
-#include <linux/kernel.h>
-#include <linux/init.h>
-#include <linux/moduleparam.h>
-MODULE_LICENSE ("GPL");
-MODULE_AUTHOR ("Module5.ko");
-static char *String; // Parametre olarak girilen string i tutar.
-module_param (String, charp, 0000); // Parametre almak için kullanılan, değişken adı, değişken türü, verilecek izinleri parametre olarak alan fonksiyon. 
-MODULE_PARM_DESC (String, "This variable's value will reverse.");
-static int __init StringReverserInit (void) // Modül yüklendiğinde çalışacak fonksiyon.
+#include <linux/kernel.h><br/>
+#include <linux/init.h><br/>
+#include <linux/moduleparam.h><br/>
+MODULE_LICENSE ("GPL");<br/>
+MODULE_AUTHOR ("Module5.ko");<br/>
+static char *String; // Parametre olarak girilen string i tutar.<br/>
+module_param (String, charp, 0000); // Parametre almak için kullanılan, değişken adı, değişken türü, verilecek izinleri parametre olarak alan fonksiyon.<br/>
+MODULE_PARM_DESC (String, "This variable's value will reverse.");<br/>
+static int __init StringReverserInit (void) // Modül yüklendiğinde çalışacak fonksiyon.<br/>
   {
 	  char Temporary;
 		int i=0;
