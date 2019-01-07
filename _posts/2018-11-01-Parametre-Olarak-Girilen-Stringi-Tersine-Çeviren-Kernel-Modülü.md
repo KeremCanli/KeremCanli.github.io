@@ -22,7 +22,7 @@ static int __init StringReverserInit (void) // Modül yüklendiğinde çalışac
         int j=strlen (String)-1; // Parametre olarak girilen string in uzunluğunun 1 eksiğini tutar.
         printk (KERN_INFO "Module StringReverser loaded.\n");
         printk (KERN_INFO "String: %s\n", String);
-        while (i<j) // Ters çevirme işlemleri gerçekleşir.
+        while (i<j) // Ters çevirme işlemlerini gerçekleştirir.
             {
                 Temporary=String[i];
 	        String[i]=String[j];
