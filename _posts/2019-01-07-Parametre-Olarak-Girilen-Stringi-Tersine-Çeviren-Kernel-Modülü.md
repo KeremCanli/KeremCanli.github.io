@@ -7,7 +7,7 @@ Merhabalar. Bu modülü oluşturmak için gerekli c dosyası ve Makefile dosyas�
 
 StringReverser.c
 
-#include <linux/module.h>
+#include <linux/module.h><br/>
 #include <linux/kernel.h>
 #include <linux/init.h>
 #include <linux/moduleparam.h>
