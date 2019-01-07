@@ -50,3 +50,5 @@ all:
 clean:
 	make -C /lib/modules/$(shell uname -r)/build M=$(PWD) clean
 </pre>
+
+Modülü yüklemek için c ve Makefile dosyasının bulunduğu dizinde terminali açıyoruz.
