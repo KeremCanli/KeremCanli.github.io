@@ -178,4 +178,12 @@ static void __exit ExitMatrixTransposer (void) // Modül kaldırıldığında ç
     }
 module_init (InitMatrixTransposer);
 module_exit (ExitMatrixTransposer);</pre>
+	<h3>Makefile</h3>
+	<pre>obj-m += MatrixTransposer.o
+all:
+	make -C /lib/modules/$(shell uname -r)/build M=$(PWD) modules
+clean:
+	make -C /lib/modules/$(shell uname -r)/build M=$(PWD) clean</pre>
+	<br/>
+	<li>Modülü yüklemek için c ve Makefile dosyasının bulunduğu dizinde terminali açıp yönetici izini alıyoruz.</li>
 </ul>
