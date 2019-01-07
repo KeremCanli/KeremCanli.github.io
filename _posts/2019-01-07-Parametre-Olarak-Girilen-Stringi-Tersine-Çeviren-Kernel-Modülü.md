@@ -40,11 +40,9 @@ static void __exit StringReverserExit (void) // Modül kaldırıldığında çal
 module_init (StringReverserInit);
 module_exit (StringReverserExit);</pre>
 	<h3>Makefile</h3>
-	<pre>
-obj-m += StringReverser.o
+	<pre>obj-m += StringReverser.o
 all:
 	make -C /lib/modules/$(shell uname -r)/build M=$(PWD) modules
 clean:
-	make -C /lib/modules/$(shell uname -r)/build M=$(PWD) clean
-	</pre>
+	make -C /lib/modules/$(shell uname -r)/build M=$(PWD) clean</pre>
 	<li>Modülü yüklemek için c ve Makefile dosyasının bulunduğu dizinde terminali açıyoruz.</li>
