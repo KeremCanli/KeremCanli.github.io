@@ -186,4 +186,22 @@ clean:
 	make -C /lib/modules/$(shell uname -r)/build M=$(PWD) clean</pre>
 	<br/>
 	<li>Modülü yüklemek için c ve Makefile dosyasının bulunduğu dizinde terminali açıp yönetici izini alıyoruz.</li>
+	<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/MatrixTransposer/1.JPG"/>
+	<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/MatrixTransposer/2.JPG"/>
+	<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/MatrixTransposer/3.JPG"/>
+	<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/MatrixTransposer/4.JPG"/>
+	<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/MatrixTransposer/5.JPG"/>
+	<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/MatrixTransposer/6.JPG"/>
+	<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/MatrixTransposer/7.JPG"/>
+	<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/MatrixTransposer/8.JPG"/>
+	<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/MatrixTransposer/9.JPG"/>
+	<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/MatrixTransposer/10.JPG"/>
+	<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/MatrixTransposer/11.JPG"/>
+	<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/MatrixTransposer/12.JPG"/>
+	<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/MatrixTransposer/13.JPG"/>
+	<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/MatrixTransposer/14.JPG"/>
+	<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/MatrixTransposer/15.JPG"/>
+	<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/MatrixTransposer/16.JPG"/>
+	<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/MatrixTransposer/17.JPG"/>
+	<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/MatrixTransposer/18.JPG"/>
 </ul>
