@@ -94,10 +94,12 @@ dizisine atar.
 			ProcBuffer[Index]=Inputs[i][j];
 		    }
 		Index++;
-		ProcBuffer[Index]='\t'; // Bir matris elemanını yani bir inputu ProcBuffer dizisine attıktan sonra bir tab boşluk bırakmak için bu elemanın peşine '\t' karakterini atar.
+		ProcBuffer[Index]='\t'; // Bir matris elemanını yani bir inputu ProcBuffer dizisine attıktan sonra bir tab
+boşluk bırakmak için bu elemanın peşine '\t' karakterini atar.
 		if ((i+1)%n==0)
 		    {
-		        ProcBuffer[Index]='\n'; // Bir matris elemanını yani bir inputu ProcBuffer dizisine attıktan sonra bu eleman satır sonunda ise yeni satıra geçmek için peşine '\n' karakterini atar.
+		        ProcBuffer[Index]='\n'; // Bir matris elemanını yani bir inputu ProcBuffer dizisine attıktan sonra
+bu eleman satır sonunda ise yeni satıra geçmek için peşine '\n' karakterini atar.
 		    }
 	    }
 	for (i=0;i<=15;i++) // ProcBuffer dizisine "Transpose Matrix" string ini atar.
@@ -114,12 +116,15 @@ dizisine atar.
 		        for (k=0;k<=CharacterNumbersOfInputs[j]-1;k++)
 			    {
 			        Index++;
-				ProcBuffer[Index]=Inputs[j][k]; // Bu üç döngü ile Inputs dizisinde bulunan inputların transpozunu alır ve ProcBuffer dizisine atar.
+				ProcBuffer[Index]=Inputs[j][k]; // Bu üç döngü ile Inputs dizisinde bulunan inputların
+transpozunu alır ve ProcBuffer dizisine atar.
 			    }
 			Index++;
-			ProcBuffer[Index]='\t'; // Transpoz matrisin bir elemanını ProcBuffer dizisine attıktan sonra bir tab boşluk bırakmak için bu elemanın peşine '\t' karakterini atar.
+			ProcBuffer[Index]='\t'; // Transpoz matrisin bir elemanını ProcBuffer dizisine attıktan sonra
+bir tab boşluk bırakmak için bu elemanın peşine '\t' karakterini atar.
 		    }
-		ProcBuffer[Index]='\n'; // Transpoz matrisin bir satırını ProcBuffer dizisine attıktan sonra yeni satıra geçmek için satır sonuna '\n' karakterini atar.
+		ProcBuffer[Index]='\n'; // Transpoz matrisin bir satırını ProcBuffer dizisine attıktan sonra yeni satıra
+geçmek için satır sonuna '\n' karakterini atar.
 	    }
 	printk (KERN_INFO "%s", ProcBuffer);
 	printk (KERN_INFO "Write function wrote %lu bytes.\n", Size);
