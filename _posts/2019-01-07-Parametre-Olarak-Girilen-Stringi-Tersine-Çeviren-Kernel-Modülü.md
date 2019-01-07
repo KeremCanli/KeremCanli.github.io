@@ -49,25 +49,33 @@ clean:
 	<li>Modülü yüklemek için c ve Makefile dosyasının bulunduğu dizinde terminali açıp yönetici izini alıyoruz.</li>
 	<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/StringReverser/1.JPG"/>
 	<br/>
+	<br/>
 	<li><strong>make</strong> komutu ile modülü derliyoruz.</li>
 	<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/StringReverser/2.JPG"/>
+	<br/>
 	<br/>
 	<li><strong>insmod StringReverser.ko String='Ters Çevrilecek String'</strong> komutu ile modülü yüklüyoruz.</li>
 	<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/StringReverser/3.JPG"/>
 	<br/>
+	<br/>
 	<li><strong>dmesg</strong> komutu ile log a bakıyoruz.</li>
 	<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/StringReverser/4.JPG"/>
+	<br/>
 	<br/>
 	<li>Modül başarı ile yüklenmişse girilen string i çevirip aşağıdaki mesajları log a yazar.</li>
 	<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/StringReverser/5.JPG"/>
 	<br/>
+	<br/>
 	<li><strong>rmmod StringReverser</strong> komutu ile modülü kaldırıyoruz.</li>
 	<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/StringReverser/6.JPG"/>
+	<br/>
 	<br/>
 	<li><strong>dmesg</strong> komutu ile log a bakıyoruz.</li>
 	<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/StringReverser/7.JPG"/>
 	<br/>
+	<br/>
 	<li>Modül başarı ile kaldırılmışsa aşağıdaki mesajı log a yazar.</li>
 	<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/StringReverser/8.JPG"/>
+	<br/>
 	<br/>
 </ul>
