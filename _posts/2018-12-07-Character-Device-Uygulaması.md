@@ -49,7 +49,7 @@ okuyan fonksiyon.
         static int Finished=0;
 	if (Finished)
 	    {
-	        printk (KERN_INFO "ProcFileRead function finished reading.\n");
+	        printk (KERN_INFO "Read function finished reading.\n");
 		Finished=0;
 		return 0; // Dosyanın sonuna daha fazla bilgi yazmayacağını belirtmek için
 return 0 yazılır.
