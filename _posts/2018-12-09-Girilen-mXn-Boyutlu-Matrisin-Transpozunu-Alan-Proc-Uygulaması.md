@@ -244,15 +244,15 @@ clean:
 	<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/MatrixTransposer/15.JPG"/>
 	<br/>
 	<br/>
-	<li></li>
+	<li><strong>rmmod MatrixTransposer</strong> komutu ile modülü kaldırıyoruz.</li>
 	<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/MatrixTransposer/16.JPG"/>
 	<br/>
 	<br/>
-	<li></li>
+	<li><strong>dmesg</strong> komutu ile log a bakıyoruz.</li>
 	<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/MatrixTransposer/17.JPG"/>
 	<br/>
 	<br/>
-	<li></li>
+	<li>Modül başarı ile kaldırılmışsa aşağıdaki mesajı log a yazar.</li>
 	<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/MatrixTransposer/18.JPG"/>
 	<br/>
 	<br/>
