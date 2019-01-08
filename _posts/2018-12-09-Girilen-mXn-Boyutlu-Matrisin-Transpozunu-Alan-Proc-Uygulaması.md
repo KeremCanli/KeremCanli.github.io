@@ -157,7 +157,7 @@ static struct file_operations FileOperations={.open=Open,
 					      .write=Write,
 					      .read=Read,
 					      .release=Release};
-static int __init InitMatrixTransposer (void) // Modül yüklendiğinde çalışacak fonksiyon.
+static int __init InitMatrixTransposer (void) // Modül yüklendiğinde çalışan fonksiyon.
     {
         printk (KERN_INFO "Module MatrixTransposer loaded.\n");
  	ProcDirEntry=proc_create (ProcName, 0644, NULL, &FileOperations); // Proc dosyasını
@@ -170,7 +170,7 @@ yaratır.
  	printk (KERN_INFO "Proc MatrixTransposer created.\n");
  	return 0;
     }
-static void __exit ExitMatrixTransposer (void) // Modül kaldırıldığında çalışacak fonksiyon.
+static void __exit ExitMatrixTransposer (void) // Modül kaldırıldığında çalışan fonksiyon.
     {
         remove_proc_entry (ProcName, NULL); // Proc dosyasını kaldırır.
  	printk (KERN_INFO "Proc MatrixTransposer removed.\n");
