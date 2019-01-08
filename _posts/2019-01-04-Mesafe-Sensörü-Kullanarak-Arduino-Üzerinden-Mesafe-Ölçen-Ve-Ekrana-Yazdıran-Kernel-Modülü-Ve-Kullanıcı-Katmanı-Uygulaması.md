@@ -152,3 +152,45 @@ all:
 	make -C /lib/modules/$(shell uname -r)/build M=$(PWD) modules
 clean:
 	make -C /lib/modules/$(shell uname -r)/build M=$(PWD) clean</pre>
+	<h3>skecth_dec29a.ino</h3>
+	<pre>const int trigPin=8;
+const int echoPin=7;
+long duration;
+int distance;
+void setup ()
+    {
+        pinMode (trigPin, OUTPUT);
+        pinMode (echoPin, INPUT);
+        Serial.begin (9600);
+    }
+void loop ()
+    {
+        float distance=0.0;
+        for (int i=0;i<5;i++)
+            {
+                distance+=getDistance (trigPin, echoPin);
+                delay (50);
+            }
+        distance/=5;
+        if (distance<0.5)
+            {
+                Serial.println ("Undefined");
+            }
+        else if (distance >0.5)
+            {
+                Serial.print (distance);
+                Serial.println (" cm");  
+            }
+        delay (1000);
+    }
+float getDistance (int trig, int echo)
+    {
+        pinMode (trig, OUTPUT);    
+        digitalWrite (trig, LOW);    
+        delayMicroseconds (2);
+        digitalWrite (trig, HIGH);
+        delayMicroseconds (10);
+        digitalWrite (trig, LOW);
+        pinMode (echo, INPUT);
+        return pulseIn (echo, HIGH, 30000)/58.0;
+    }</pre>
