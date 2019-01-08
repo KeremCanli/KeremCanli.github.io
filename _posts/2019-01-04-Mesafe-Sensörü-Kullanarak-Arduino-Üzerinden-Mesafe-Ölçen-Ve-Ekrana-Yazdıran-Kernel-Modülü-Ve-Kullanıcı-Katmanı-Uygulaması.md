@@ -42,7 +42,7 @@ int main ()
 	while (Condition); // do while ile Device ı 10 kere açar, okur, ekrana yazar ve kullanıcıdan
 aldığı komuta göre ya çıkış yapar ya da tekrar baştaki işlemleri yapar.
 	return 0;
-    }</pre>
+    } </pre>
 	<h3>DistanceMeasurer2.c</h3>
 	<pre>#include <linux/kernel.h>
 #include <linux/module.h>
