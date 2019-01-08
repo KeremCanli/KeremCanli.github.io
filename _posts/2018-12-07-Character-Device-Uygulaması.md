@@ -118,59 +118,59 @@ all:
 clean:
 	make -C /lib/modules/$(shell uname -r)/build M=$(PWD) clean</pre>
 	<br/>
-	<li></li>
+	<li>Modülü yüklemek için c ve Makefile dosyasının bulunduğu dizinde terminali açıp yönetici izini alıyoruz.</li>
 	<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/CharacterDevice/1.JPG"/>
 	<br/>
 	<br/>
-	<li></li>
+	<li><strong>make</strong> komutu ile modülü derliyoruz.</li>
 	<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/CharacterDevice/2.JPG"/>
 	<br/>
 	<br/>
-	<li></li>
+	<li><strong>insmod CharacterDevice.ko</strong> komutu ile modülü yüklüyoruz.</li>
 	<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/CharacterDevice/3.JPG"/>
 	<br/>
 	<br/>
-	<li></li>
+	<li><strong>dmesg</strong> komutu ile log a bakıyoruz.</li>
 	<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/CharacterDevice/4.JPG"/>
 	<br/>
 	<br/>
-	<li></li>
+	<li>Modül başarı ile yüklenmişse aşağıdaki mesajları log a yazar.</li>
 	<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/CharacterDevice/5.JPG"/>
 	<br/>
 	<br/>
-	<li></li>
+	<li><strong>echo ? > /dev/CharacterDevice</strong> komutu ile inputu device dosyasına yazıyoruz. Bu komut Write fonksiyonunu çalıştırır ve bu fonksiyon girilen inputu log a yazar.</li>
 	<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/CharacterDevice/6.JPG"/>
 	<br/>
 	<br/>
-	<li></li>
+	<li><strong>dmesg</strong> komutu ile log a bakıyoruz.</li>
 	<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/CharacterDevice/7.JPG"/>
 	<br/>
 	<br/>
-	<li></li>
+	<li>Aşağıda görüldüğü gibi log a yazılmış.</li>
 	<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/CharacterDevice/8.JPG"/>
 	<br/>
 	<br/>
-	<li></li>
+	<li><strong>cat /dev/CharacterDevice</strong> komutu ile device dosyasını okuyuruz. Bu komut Read fonksiyonunu çalıştırır ve bu fonksiyon device dosyasından okuduklarını konsol ve log a yazar.</li>
 	<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/CharacterDevice/9.JPG"/>
 	<br/>
 	<br/>
-	<li></li>
+	<li><strong>dmesg</strong> komutu ile log a bakıyoruz.</li>
 	<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/CharacterDevice/10.JPG"/>
 	<br/>
 	<br/>
-	<li></li>
+	<li>Aşağıda görüldüğü gibi log a yazılmış.</li>
 	<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/CharacterDevice/11.JPG"/>
 	<br/>
 	<br/>
-	<li></li>
+	<li><strong>rmmod CharacterDevice</strong> komutu ile modülü kaldırıyoruz.</li>
 	<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/CharacterDevice/12.JPG"/>
 	<br/>
 	<br/>
-	<li></li>
+	<li><strong>dmesg</strong> komutu ile log a bakıyoruz.</li>
 	<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/CharacterDevice/13.JPG"/>
 	<br/>
 	<br/>
-	<li></li>
+	<li>Modül başarı ile kaldırılmışsa aşağıdaki mesajları log a yazar.</li>
 	<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/CharacterDevice/14.JPG"/>
 	<br/>
 	<br/>
