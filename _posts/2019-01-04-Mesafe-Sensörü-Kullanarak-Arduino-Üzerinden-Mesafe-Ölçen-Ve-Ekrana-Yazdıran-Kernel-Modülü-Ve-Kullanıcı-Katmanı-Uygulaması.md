@@ -5,7 +5,8 @@ title: Mesafe Sensörü Kullanarak Arduino Üzerinden Mesafe Ölçen Ve Ekrana Y
 <ul>
 	<li>Kullanıcı katmanı uygulamasını oluşturmak, modülü oluşturmak ve mesafe sensörünü kullanabilmek için gerekli c, Makefile ve ino dosyası kodları aşağıdaki gibidir.</li>
 	<h3>DistanceMeasurer1.c</h3>
-	<pre>int main ()
+	<pre>#include
+int main ()
     {
         int i, Condition;
 	char Buffer[10]; // Device dan alınan bilgiyi tutar.
