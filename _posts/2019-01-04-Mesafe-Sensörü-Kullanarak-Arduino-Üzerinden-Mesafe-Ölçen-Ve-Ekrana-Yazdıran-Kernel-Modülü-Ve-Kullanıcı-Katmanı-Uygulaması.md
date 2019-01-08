@@ -254,7 +254,7 @@ float getDistance (int trig, int echo)
 	<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/DistanceMeasurer/16.JPG"/>
 	<br/>
 	<br/>
-	<li>Modül başarı ile kaldırılmışsa aşağıdaki mesajı log a yazar.</li>
+	<li>Modül başarı ile kaldırılmışsa aşağıdaki mesajları log a yazar.</li>
 	<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/DistanceMeasurer/17.JPG"/>
 	<br/>
 	<br/>
