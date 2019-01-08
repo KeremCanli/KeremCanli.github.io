@@ -89,7 +89,7 @@ bilgiyi DeviceBuffer dizisine aktaran fonksiyon.
 	printk (KERN_INFO "Distance: %s", DeviceBuffer); // DeviceBuffer dizisini log a yazdırır.
 	set_fs (OldFS);
 	filp_close (FilePointer, NULL); // Arduino ile bağlantıyı sonlandıran fonksiyon.
-	copy_to_user (Buffer, DeviceBuffer, 10); // User katmanından bilginin okunabilmesi
+	copy_to_user (Buffer, DeviceBuffer, 10); // Kullanıcı katmanından bilginin okunabilmesi
 için DeviceBuffer dizisini Buffer a kopyalayan fonksiyon.
 	return 0;
     }
@@ -202,59 +202,60 @@ float getDistance (int trig, int echo)
 	<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/DistanceMeasurer/3.JPG"/>
 	<br/>
 	<br/>
-	<li></li>
+	<li><strong>insmod DistanceMeasurer2.ko</strong> komutu ile modülü yüklüyoruz.</li>
 	<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/DistanceMeasurer/4.JPG"/>
 	<br/>
 	<br/>
-	<li></li>
+	<li><strong>dmesg</strong> komutu ile log a bakıyoruz.</li>
 	<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/DistanceMeasurer/5.JPG"/>
 	<br/>
 	<br/>
-	<li></li>
+	<li>Modül başarı ile yüklenmişse aşağıdaki mesajları log a yazar.</li>
 	<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/DistanceMeasurer/6.JPG"/>
 	<br/>
 	<br/>
-	<li></li>
+	<li><strong>chmod a+rw /dev/DistanceMeasurer</strong> ve <strong>chmod a+rw /dev/ttyUSB0</strong> komutları ile gerekli izinleri veriyoruz.</li>
 	<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/DistanceMeasurer/7.JPG"/>
 	<br/>
 	<br/>
-	<li></li>
+	<li><strong>gcc -o DistanceMeasurer1 DistanceMeasurer1.c</strong> komutu ile kullanıcı katmanı uygulamasını derliyoruz.</li>
 	<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/DistanceMeasurer/8.JPG"/>
 	<br/>
 	<br/>
-	<li></li>
+	<li><strong>./DistanceMeasurer1</strong> komutu ile kullanıcı katmanı uygulamasını çalıştırıyoruz. Bu uygulama device ı okuyarak Arduino dan gelen bilgileri konsola yazar.</li>
 	<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/DistanceMeasurer/9.JPG"/>
 	<br/>
 	<br/>
-	<li></li>
+	<li><strong>dmesg</strong> komutu ile log a bakıyoruz.</li>
 	<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/DistanceMeasurer/10.JPG"/>
 	<br/>
 	<br/>
-	<li></li>
+	<li>Kullanıcı katmanı uygulaması okuma yapabilmek için Read fonksiyonunu çalıştırır. Bu fonksiyon çalışınca bilgileri hem kullanıcı katmanına kopyalar hem de log a yazar.</li>
 	<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/DistanceMeasurer/11.JPG"/>
 	<br/>
 	<br/>
-	<li></li>
+	<li><strong>cat /dev/DistanceMeasurer</strong> komutu ile kullanıcı katmanı uygulaması olmadan da device ı okuyabiliriz.</li>
 	<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/DistanceMeasurer/12.JPG"/>
 	<br/>
 	<br/>
-	<li></li>
+	<li><strong>dmesg</strong> komutu ile log a bakıyoruz.</li>
 	<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/DistanceMeasurer/13.JPG"/>
 	<br/>
 	<br/>
-	<li></li>
+	<li>En son mesafe 26.31 cm idi. <strong>cat</strong> komutu ile okuma yaptıktan sonraki mesafe 21.36 cm olarak gözüküyor.</li>
 	<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/DistanceMeasurer/14.JPG"/>
 	<br/>
 	<br/>
-	<li></li>
+	<li><strong>rmmod DistanceMeasurer2</strong> komutu ile modülü kaldırıyoruz.</li>
 	<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/DistanceMeasurer/15.JPG"/>
 	<br/>
 	<br/>
-	<li></li>
+	<li><strong>dmesg</strong> komutu ile log a bakıyoruz.</li>
 	<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/DistanceMeasurer/16.JPG"/>
 	<br/>
 	<br/>
-	<li></li>
+	<li>Modül başarı ile kaldırılmışsa aşağıdaki mesajı log a yazar.</li>
 	<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/DistanceMeasurer/17.JPG"/>
 	<br/>
 	<br/>
+</ul>
