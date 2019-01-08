@@ -119,3 +119,59 @@ clean:
 	make -C /lib/modules/$(shell uname -r)/build M=$(PWD) clean</pre>
 	<br/>
 	<li></li>
+	<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/CharacterDevice/1.JPG"/>
+	<br/>
+	<br/>
+	<li></li>
+	<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/CharacterDevice/2.JPG"/>
+	<br/>
+	<br/>
+	<li></li>
+	<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/CharacterDevice/3.JPG"/>
+	<br/>
+	<br/>
+	<li></li>
+	<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/CharacterDevice/4.JPG"/>
+	<br/>
+	<br/>
+	<li></li>
+	<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/CharacterDevice/5.JPG"/>
+	<br/>
+	<br/>
+	<li></li>
+	<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/CharacterDevice/6.JPG"/>
+	<br/>
+	<br/>
+	<li></li>
+	<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/CharacterDevice/7.JPG"/>
+	<br/>
+	<br/>
+	<li></li>
+	<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/CharacterDevice/8.JPG"/>
+	<br/>
+	<br/>
+	<li></li>
+	<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/CharacterDevice/9.JPG"/>
+	<br/>
+	<br/>
+	<li></li>
+	<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/CharacterDevice/10.JPG"/>
+	<br/>
+	<br/>
+	<li></li>
+	<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/CharacterDevice/11.JPG"/>
+	<br/>
+	<br/>
+	<li></li>
+	<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/CharacterDevice/12.JPG"/>
+	<br/>
+	<br/>
+	<li></li>
+	<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/CharacterDevice/13.JPG"/>
+	<br/>
+	<br/>
+	<li></li>
+	<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/CharacterDevice/14.JPG"/>
+	<br/>
+	<br/>
+</ul>
