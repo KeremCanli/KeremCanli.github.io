@@ -39,7 +39,8 @@ int main ()
 			goto Choice;
 		    }
 	    }
-	while (Condition); // do while ile Device ı 10 kere açar, okur, ekrana yazar ve kullanıcıdan aldığı komuta göre ya çıkış yapar ya da tekrar baştaki işlemleri yapar.
+	while (Condition); // do while ile Device ı 10 kere açar, okur, ekrana yazar ve kullanıcıdan
+aldığı komuta göre ya çıkış yapar ya da tekrar baştaki işlemleri yapar.
 	return 0;
     }</pre>
 	<h3>DistanceMeasurer2.c</h3>
@@ -69,7 +70,8 @@ static int Open (struct inode *Inode, struct file *File) // Device ı açan fonk
         printk (KERN_INFO "Device opened.\n");
 	return 0;
     }
-static ssize_t Read (struct file *File, char *Buffer, size_t Length, loff_t *Offset) // Device ı okuyan fonksiyon.
+static ssize_t Read (struct file *File, char *Buffer, size_t Length, loff_t *Offset) // Device ı
+okuyan fonksiyon.
     {	
         int i;		
 	struct file *FilePointer; // Arduino dan bilgi okumasını sağlayan pointer.
@@ -78,18 +80,21 @@ static ssize_t Read (struct file *File, char *Buffer, size_t Length, loff_t *Off
 	    {
 	        DeviceBuffer[i]='\0'; // DeviceBuffer dizisinin elemanlarını sıfırlar.
 	    }
-	FilePointer=filp_open (FILE_DIR, O_RDWR|O_APPEND, 0644); // Arduino nun bağlı portun bilgilerini alarak bağlantı sağlayan fonksiyon.
+	FilePointer=filp_open (FILE_DIR, O_RDWR|O_APPEND, 0644); // Arduino nun bağlı
+portun bilgilerini alarak bağlantı sağlayan fonksiyon.
 	if (IS_ERR (FilePointer)) // Arduino ile bağlantı sağlayamaması durumunda mesaj verir.
 	    {
 	        printk (KERN_INFO "Connection failed.\n");
 	    }
 	OldFS=get_fs ();
 	set_fs (get_ds ());
-	kernel_read (FilePointer, DeviceBuffer, 10, &FilePointer->f_pos); // Arduino dan gelen bilgiyi DeviceBuffer dizisine aktaran fonksiyon.
+	kernel_read (FilePointer, DeviceBuffer, 10, &FilePointer->f_pos); // Arduino dan gelen
+bilgiyi DeviceBuffer dizisine aktaran fonksiyon.
 	printk (KERN_INFO "Distance: %s", DeviceBuffer); // DeviceBuffer dizisini log a yazdırır.
 	set_fs (OldFS);
 	filp_close (FilePointer, NULL); // Arduino ile bağlantıyı sonlandıran fonksiyon.
-	copy_to_user (Buffer, DeviceBuffer, 10); // User katmanından bilginin okunabilmesi için DeviceBuffer dizisini Buffer a kopyalayan fonksiyon.
+	copy_to_user (Buffer, DeviceBuffer, 10); // User katmanından bilginin okunabilmesi
+için DeviceBuffer dizisini Buffer a kopyalayan fonksiyon.
 	return 0;
     }
 static int Release (struct inode *Inode, struct file *File) // Device ı kapatan fonksiyon.
@@ -103,7 +108,8 @@ static struct file_operations FileOperations={.open=Open,
 static int __init InitDistanceMeasurer (void) // Modül yüklendiğinde çalışan fonksiyon.
     {
         printk (KERN_INFO "Module DistanceMeasurer loaded.\n");
-	MajorNumber=register_chrdev (0, DeviceName, &FileOperations); // Major numarasını oluşturur.
+	MajorNumber=register_chrdev (0, DeviceName, &FileOperations); // Major numarasını
+oluşturur.
 	if (MajorNumber<0) // Major numarasını oluşturamadığında mesaj verir.
 	    {
 	        printk (KERN_ALERT "Major number did not create.\n");
