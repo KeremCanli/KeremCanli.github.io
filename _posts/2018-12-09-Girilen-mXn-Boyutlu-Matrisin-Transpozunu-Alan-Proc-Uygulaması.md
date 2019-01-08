@@ -204,7 +204,7 @@ clean:
 	<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/MatrixTransposer/5.JPG"/>
 	<br/>
 	<br/>
-	<li><strong>echo ?,?,?,?,... > /proc/MatrixTransposer</strong> komutu ile inputları aralarına virgül koyarak proc dosyasına yazıyoruz. Bu komut Write fonksiyonunu çalıştırır ve bu fonksiyon girilen inputları formatlı bir şekilde proc dosyasına yazar ve log a basar.</li>
+	<li><strong>echo ?,?,?,?,... > /proc/MatrixTransposer</strong> komutu ile inputları aralarına virgül koyarak proc dosyasına yazıyoruz. Bu komut Write fonksiyonunu çalıştırır ve bu fonksiyon girilen inputları formatlı bir şekilde proc dosyasına yazar ve log a yazar.</li>
 	<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/MatrixTransposer/6.JPG"/>
 	<br/>
 	<br/>
