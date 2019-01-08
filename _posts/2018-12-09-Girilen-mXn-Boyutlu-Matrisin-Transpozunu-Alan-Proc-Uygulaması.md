@@ -193,51 +193,51 @@ clean:
 	<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/MatrixTransposer/2.JPG"/>
 	<br/>
 	<br/>
-	<li></li>
+	<li><strong>insmod MatrixTransposer.ko m='Satır Sayısı' n='Sütun Sayı'</strong> komutu ile modülü yüklüyoruz.</li>
 	<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/MatrixTransposer/3.JPG"/>
 	<br/>
 	<br/>
-	<li></li>
+	<li><strong>dmesg</strong> komutu ile log a bakıyoruz.</li>
 	<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/MatrixTransposer/4.JPG"/>
 	<br/>
 	<br/>
-	<li></li>
+	<li>Modül başarı ile yüklenmişse aşağıdaki mesajları log a yazar.</li>
 	<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/MatrixTransposer/5.JPG"/>
 	<br/>
 	<br/>
-	<li></li>
+	<li><strong>echo ?,?,?,?,... > /proc/MatrixTransposer</strong> komutu ile inputları aralarına virgül koyarak proc dosyasına yazıyoruz. Bu komut Write fonksiyonunu çalıştırır ve bu fonksiyon girilen inputları formatlı bir şekilde proc dosyasına yazar ve log a basar.</li>
 	<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/MatrixTransposer/6.JPG"/>
 	<br/>
 	<br/>
-	<li></li>
+	<li><strong>dmesg</strong> komutu ile log a bakıyoruz.</li>
 	<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/MatrixTransposer/7.JPG"/>
 	<br/>
 	<br/>
-	<li></li>
+	<li>Aşağıda görüldüğü gibi formatlı bir şekilde log a yazılmış.</li>
 	<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/MatrixTransposer/8.JPG"/>
 	<br/>
 	<br/>
-	<li></li>
+	<li><strong>cat /proc/MatrixTransposer</strong> komutu ile proc dosyasını okuyuruz. Bu komut Read fonksiyonunu çalıştırır ve bu fonksiyon proc dosyasından okuduklarını konsol ve log a yazar.</li>
 	<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/MatrixTransposer/9.JPG"/>
 	<br/>
 	<br/>
-	<li></li>
+	<li><strong>dmesg</strong> komutu ile log a bakıyoruz.</li>
 	<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/MatrixTransposer/10.JPG"/>
 	<br/>
 	<br/>
-	<li></li>
+	<li>Aşağıda görüldüğü gibi log a yazılmış.</li>
 	<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/MatrixTransposer/11.JPG"/>
 	<br/>
 	<br/>
-	<li></li>
+	<li><strong>pico /proc/MatrixTransposer</strong> komutu ile de proc dosyasını okuyabiliriz. Bu komut Read fonksiyonunu çalıştırır ve bu fonksiyon proc dosyasından okuduklarını konsol ve log a yazar.</li>
 	<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/MatrixTransposer/12.JPG"/>
 	<br/>
 	<br/>
-	<li></li>
+	<li><strong>dmesg</strong> komutu ile log a bakıyoruz.</li>
 	<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/MatrixTransposer/13.JPG"/>
 	<br/>
 	<br/>
-	<li></li>
+	<li>Aşağıda görüldüğü gibi log a yazılmış.</li>
 	<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/MatrixTransposer/14.JPG"/>
 	<br/>
 	<br/>
