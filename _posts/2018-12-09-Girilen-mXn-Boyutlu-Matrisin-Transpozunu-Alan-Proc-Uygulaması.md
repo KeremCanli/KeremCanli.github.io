@@ -233,15 +233,14 @@ clean:
 	<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/MatrixTransposer/12.JPG"/>
 	<br/>
 	<br/>
-	<li><strong>dmesg</strong> komutu ile log a bakıyoruz.</li>
 	<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/MatrixTransposer/13.JPG"/>
 	<br/>
 	<br/>
-	<li>Aşağıda görüldüğü gibi log a yazılmış.</li>
+	<li><strong>dmesg</strong> komutu ile log a bakıyoruz.</li>
 	<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/MatrixTransposer/14.JPG"/>
 	<br/>
 	<br/>
-	<li></li>
+	<li>Aşağıda görüldüğü gibi log a yazılmış.</li>
 	<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/MatrixTransposer/15.JPG"/>
 	<br/>
 	<br/>
