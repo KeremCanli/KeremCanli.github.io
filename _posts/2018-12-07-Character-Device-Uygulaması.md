@@ -26,7 +26,8 @@ static int Open (struct inode *Inode, struct file *File) // Device ı açan fonk
         printk (KERN_INFO "Device opened.\n");
 	return 0;
     }
-static ssize_t Write (struct file *File, const char *Buffer, size_t Length, loff_t *Offset) // Device a yazan fonksiyon.
+static ssize_t Write (struct file *File, const char *Buffer, size_t Length, loff_t *Offset) // Device a
+yazan fonksiyon.
     {
         if (Length>MaximumSize)
 	    {
@@ -36,22 +37,26 @@ static ssize_t Write (struct file *File, const char *Buffer, size_t Length, loff
 	    {
   	        Size=Length;
  	    }
- 	copy_from_user (DeviceBuffer, Buffer, Size); // Veriyi Buffer dan DeviceBuffer a kopyalar.
+ 	copy_from_user (DeviceBuffer, Buffer, Size); // Veriyi Buffer dan DeviceBuffer a
+kopyalar.
 	printk (KERN_INFO "%s", DeviceBuffer);
 	printk (KERN_INFO "Write function wrote %lu bytes.\n", Size);
 	return Size;
     }
-static ssize_t Read (struct file *File, char *Buffer, size_t Length, loff_t *Offset) // Device ı okuyan fonksiyon.
+static ssize_t Read (struct file *File, char *Buffer, size_t Length, loff_t *Offset) // Device ı
+okuyan fonksiyon.
     {
         static int Finished=0;
 	if (Finished)
 	    {
 	        printk (KERN_INFO "ProcFileRead function finished reading.\n");
 		Finished=0;
-		return 0; // Dosyanın sonuna daha fazla bilgi yazmayacağını belirtmek için return 0 yazılır.
+		return 0; // Dosyanın sonuna daha fazla bilgi yazmayacağını belirtmek için
+return 0 yazılır.
 	    }
 	Finished=1;
-	copy_to_user (Buffer, DeviceBuffer, Size); // Veriyi DeviceBuffer dan Buffer a kopyalar.
+	copy_to_user (Buffer, DeviceBuffer, Size); // Veriyi DeviceBuffer dan Buffer a
+kopyalar.
 	printk (KERN_INFO "%s", Buffer);
 	printk (KERN_INFO "Read function read %lu bytes.\n", Size);
  	return Size;
@@ -68,7 +73,8 @@ static struct file_operations FileOperations={.open=Open,
 static int __init InitCharacterDevice (void) // Modül yüklendiğinde çalışan fonksiyon.
     {
         printk (KERN_INFO "Module CharacterDevice loaded.\n");
-	MajorNumber=register_chrdev (0, DeviceName, &FileOperations); // Major numarasını oluşturur.
+	MajorNumber=register_chrdev (0, DeviceName, &FileOperations); // Major numarasını
+oluşturur.
    	if (MajorNumber<0) // Major numarasını oluşturamadığında mesaj verir.
 	    {
       	        printk (KERN_ALERT "Major number did not create.\n");
@@ -81,7 +87,8 @@ static int __init InitCharacterDevice (void) // Modül yüklendiğinde çalışa
       		printk (KERN_ALERT "Class CharacterDeviceClass did not create.\n");
    	    }
    	printk (KERN_INFO "Class CharacterDeviceClass created.\n");
-   	Device=device_create (Class, NULL, MKDEV (MajorNumber, 0), NULL, DeviceName); // Device ı oluşturur.
+   	Device=device_create (Class, NULL, MKDEV (MajorNumber, 0), NULL, DeviceName); // Device ı
+oluşturur.
    	if (IS_ERR (Device)) // Device ı oluşturamadığında aşağıdaki işlemleri gerçekleştirir.
 	    {
       	        class_destroy (Class); // Class ı kaldırır.
