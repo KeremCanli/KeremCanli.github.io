@@ -59,7 +59,6 @@ aldığı komuta göre ya çıkış yapar ya da tekrar baştaki işlemleri yapar
 #define DeviceName "DistanceMeasurer"
 #define ClassName "DistanceMeasurerClass"
 MODULE_LICENSE ("GPL");
-MODULE_DESCRIPTION ("Distance Measurer");
 MODULE_AUTHOR ("Module5.ko");
 static int MajorNumber; // Major numarasını tutar.
 static char DeviceBuffer[10]; // Arduino dan gelen bilgiyi tutar.
