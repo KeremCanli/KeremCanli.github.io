@@ -190,15 +190,15 @@ float getDistance (int trig, int echo)
         return pulseIn (echo, HIGH, 30000)/58.0;
     }</pre>
 	<br/>
-	<li>Modülü yüklemek için c ve Makefile dosyasının bulunduğu dizinde terminali açıp yönetici izini alıyoruz.</li>
+	<li>Bir adet Arduino Uno, bir adet mini breadboard, bir adet HC-SR04 Mesafe Sensörü ve bağlantı kabloları kullanarak aşağıdaki devreyi kuruyoruz.</li>
 	<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/DistanceMeasurer/1.JPG"/>
 	<br/>
 	<br/>
-	<li><strong>make</strong> komutu ile modülü derliyoruz.</li>
+	<li>Modülü yüklemek için c ve Makefile dosyasının bulunduğu dizinde terminali açıp yönetici izini alıyoruz.</li>
 	<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/DistanceMeasurer/2.JPG"/>
 	<br/>
 	<br/>
-	<li></li>
+	<li><strong>make</strong> komutu ile modülü derliyoruz.</li>
 	<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/DistanceMeasurer/3.JPG"/>
 	<br/>
 	<br/>
@@ -252,5 +252,9 @@ float getDistance (int trig, int echo)
 	<br/>
 	<li></li>
 	<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/DistanceMeasurer/16.JPG"/>
+	<br/>
+	<br/>
+	<li></li>
+	<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/DistanceMeasurer/17.JPG"/>
 	<br/>
 	<br/>
