@@ -194,3 +194,68 @@ float getDistance (int trig, int echo)
         pinMode (echo, INPUT);
         return pulseIn (echo, HIGH, 30000)/58.0;
     }</pre>
+	<br/>
+	<li>Modülü yüklemek için c ve Makefile dosyasının bulunduğu dizinde terminali açıp yönetici izini alıyoruz.</li>
+	<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/DistanceMeasurer/1.JPG"/>
+	<br/>
+	<br/>
+	<li><strong>make</strong> komutu ile modülü derliyoruz.</li>
+	<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/DistanceMeasurer/2.JPG"/>
+	<br/>
+	<br/>
+	<li></li>
+	<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/DistanceMeasurer/3.JPG"/>
+	<br/>
+	<br/>
+	<li></li>
+	<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/DistanceMeasurer/4.JPG"/>
+	<br/>
+	<br/>
+	<li></li>
+	<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/DistanceMeasurer/5.JPG"/>
+	<br/>
+	<br/>
+	<li></li>
+	<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/DistanceMeasurer/6.JPG"/>
+	<br/>
+	<br/>
+	<li></li>
+	<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/DistanceMeasurer/7.JPG"/>
+	<br/>
+	<br/>
+	<li></li>
+	<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/DistanceMeasurer/8.JPG"/>
+	<br/>
+	<br/>
+	<li></li>
+	<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/DistanceMeasurer/9.JPG"/>
+	<br/>
+	<br/>
+	<li></li>
+	<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/DistanceMeasurer/10.JPG"/>
+	<br/>
+	<br/>
+	<li></li>
+	<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/DistanceMeasurer/11.JPG"/>
+	<br/>
+	<br/>
+	<li></li>
+	<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/DistanceMeasurer/12.JPG"/>
+	<br/>
+	<br/>
+	<li></li>
+	<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/DistanceMeasurer/13.JPG"/>
+	<br/>
+	<br/>
+	<li></li>
+	<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/DistanceMeasurer/14.JPG"/>
+	<br/>
+	<br/>
+	<li></li>
+	<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/DistanceMeasurer/15.JPG"/>
+	<br/>
+	<br/>
+	<li></li>
+	<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/DistanceMeasurer/16.JPG"/>
+	<br/>
+	<br/>
