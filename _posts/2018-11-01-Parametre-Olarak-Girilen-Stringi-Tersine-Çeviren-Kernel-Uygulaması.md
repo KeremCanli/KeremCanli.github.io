@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Parametre Olarak Girilen Stringi Tersine Çeviren Kernel Modülü
+title: Parametre Olarak Girilen Stringi Tersine Çeviren Kernel Uygulaması
 ---
 <ul>
 	<li>Modülü oluşturmak için gerekli c ve Makefile dosyası kodları aşağıdaki gibidir.</li>
