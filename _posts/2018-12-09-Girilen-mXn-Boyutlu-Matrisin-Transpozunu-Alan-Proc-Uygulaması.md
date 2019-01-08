@@ -18,7 +18,7 @@ static int m; // Parametre olarak girilen integer ı tutar.
 static int n; // Parametre olarak girilen integer ı tutar.
 static unsigned long Size=0;
 static char ProcBuffer[MaximumSize];
-static struct proc_dir_entry *ProcDirEntry; // Proc dosyası ile ilgili bilgileri tutar.
+static struct proc_dir_entry *ProcDirEntry; // Proc ile ilgili bilgileri tutar.
 module_param (m, int, 0000); // Parametre almak için kullanılan, değişken adı, değişken
 türü, verilecek izinleri parametre olarak alan fonksiyon.
 module_param (n, int, 0000); // Parametre almak için kullanılan, değişken adı, değişken
@@ -160,9 +160,8 @@ static struct file_operations FileOperations={.open=Open,
 static int __init InitMatrixTransposer (void) // Modül yüklendiğinde çalışan fonksiyon.
     {
         printk (KERN_INFO "Module MatrixTransposer loaded.\n");
- 	ProcDirEntry=proc_create (ProcName, 0644, NULL, &FileOperations); // Proc dosyasını
-yaratır.
- 	if (ProcDirEntry==NULL) // Proc dosyasının yaratılıp yaratılmadığı kontrol eder.
+ 	ProcDirEntry=proc_create (ProcName, 0644, NULL, &FileOperations); // Proc u yaratır.
+ 	if (ProcDirEntry==NULL) // Proc un yaratılıp yaratılmadığı kontrol eder.
 	    {
   	        printk (KERN_INFO "Proc MatrixTransposer did not create.\n");
   		return -ENOMEM;
@@ -172,7 +171,7 @@ yaratır.
     }
 static void __exit ExitMatrixTransposer (void) // Modül kaldırıldığında çalışan fonksiyon.
     {
-        remove_proc_entry (ProcName, NULL); // Proc dosyasını kaldırır.
+        remove_proc_entry (ProcName, NULL); // Proc u kaldırır.
  	printk (KERN_INFO "Proc MatrixTransposer removed.\n");
 	printk (KERN_INFO "Module MatrixTransposer removed.\n");
     }
