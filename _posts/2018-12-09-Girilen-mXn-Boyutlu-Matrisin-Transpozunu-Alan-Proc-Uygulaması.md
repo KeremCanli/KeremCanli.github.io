@@ -251,7 +251,7 @@ clean:
 	<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/MatrixTransposer/17.JPG"/>
 	<br/>
 	<br/>
-	<li>Modül başarı ile kaldırılmışsa aşağıdaki mesajı log a yazar.</li>
+	<li>Modül başarı ile kaldırılmışsa aşağıdaki mesajları log a yazar.</li>
 	<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/MatrixTransposer/18.JPG"/>
 	<br/>
 	<br/>
