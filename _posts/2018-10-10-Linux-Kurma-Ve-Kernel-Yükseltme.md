@@ -8,6 +8,7 @@ title: Linux Kurma Ve Kernel Yükseltme
 	<li>En güncel Ubuntu sürümü olan 18.04.1 kurulumunu sanal makine üzerinde başlatıyoruz.</li>
 	<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/LinuxSetupAndKernelUpgrade/1.JPG"/>
 	<br/>
+	<br/>
 	<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/LinuxSetupAndKernelUpgrade/2.JPG"/>
 	<li>Herhangi bir problem olabilir diye güncellemeleri sonra yapmayı tercih edebilirsiniz.</li>
 	<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/LinuxSetupAndKernelUpgrade/3.JPG"/>
