@@ -6,273 +6,272 @@ title: Linux Kurma Ve Kernel Yükseltme
 Merhabalar. Bu postta sizlere sanal makine üzerinde Ubuntu kurmayı ve kernel yükseltmeyi anlatacağım.
 
 
-![_config.yml]({{ site.baseurl }}/images/1.png)
+<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/LinuxSetupAndKernelUpgrade/1.JPG"/>
 
 En güncel Ubuntu sürümü olan 18.04.1 kurulumunu sanal makine üzerinde başlatıyoruz.
 
 
-![_config.yml]({{ site.baseurl }}/images/2.png)
+<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/LinuxSetupAndKernelUpgrade/2.JPG"/>
 
 
-![_config.yml]({{ site.baseurl }}/images/3.png)
+<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/LinuxSetupAndKernelUpgrade/3.JPG"/>
 
 Herhangi bir problem olabilir diye güncellemeleri sonra yapmayı tercih edebilirsiniz.
 
 
-![_config.yml]({{ site.baseurl }}/images/4.png)
+<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/LinuxSetupAndKernelUpgrade/4.JPG"/>
 
 
-![_config.yml]({{ site.baseurl }}/images/5.png)
+<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/LinuxSetupAndKernelUpgrade/5.JPG"/>
 
 
-![_config.yml]({{ site.baseurl }}/images/6.png)
+<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/LinuxSetupAndKernelUpgrade/6.JPG"/>
 
 
-![_config.yml]({{ site.baseurl }}/images/7.png)
+<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/LinuxSetupAndKernelUpgrade/7.JPG"/>
 
 
-![_config.yml]({{ site.baseurl }}/images/8.png)
+<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/LinuxSetupAndKernelUpgrade/8.JPG"/>
 
 
-![_config.yml]({{ site.baseurl }}/images/9.png)
+<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/LinuxSetupAndKernelUpgrade/9.JPG"/>
 
 Kurulum tamamlandı. Sistemi yeniden başlatıyoruz.
 
 
-![_config.yml]({{ site.baseurl }}/images/10.png)
+<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/LinuxSetupAndKernelUpgrade/10.JPG"/>
 
 Ubuntu problemsiz bir şekilde başladı.
 
 
-![_config.yml]({{ site.baseurl }}/images/11.png)
+<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/LinuxSetupAndKernelUpgrade/11.JPG"/>
 
 Eğer kurulum sırasında güncelleştirmeleri yapmayı sonraya bıraktıysanız güncellemeleri yapmak için Yazılım Güncelleştirici’ yi kullanalım.
 
 
-![_config.yml]({{ site.baseurl }}/images/12.png)
+<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/LinuxSetupAndKernelUpgrade/12.JPG"/>
 
 Güncelleştirmeleri başlatıyoruz.
 
-![_config.yml]({{ site.baseurl }}/images/13.png)
+<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/LinuxSetupAndKernelUpgrade/13.JPG"/>
 
 
-![_config.yml]({{ site.baseurl }}/images/14.png)
+<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/LinuxSetupAndKernelUpgrade/14.JPG"/>
 
 Güncelleştirmeler bitti ve sistemi yeniden başlatıyoruz.
 
 
-![_config.yml]({{ site.baseurl }}/images/15.png)
+<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/LinuxSetupAndKernelUpgrade/15.JPG"/>
 
 Terminali açıyoruz.
 
 
-![_config.yml]({{ site.baseurl }}/images/16.png)
+<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/LinuxSetupAndKernelUpgrade/16.JPG"/>
 
 Kernel sürümünü öğrenmek için uname –r komutunu giriyoruz.
 
 
-![_config.yml]({{ site.baseurl }}/images/17.png)
+<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/LinuxSetupAndKernelUpgrade/17.JPG"/>
 
 Ubuntu 18.04.1 ile default olarak gelen kernel sürümü 4.15.0-34-generic.
 
 
-![_config.yml]({{ site.baseurl }}/images/18.png)
+<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/LinuxSetupAndKernelUpgrade/18.JPG"/>
 
 www.kernel.org sitesine girdiğimizde en güncel kernel sürümü gösterecektir. Ben yükseltme yaparken en güncel sürüm 4.18.11 idi.
 
 
-![_config.yml]({{ site.baseurl }}/images/19.png)
+<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/LinuxSetupAndKernelUpgrade/19.JPG"/>
 
 Bu sürümü indiriyoruz.
 
 
-![_config.yml]({{ site.baseurl }}/images/20.png)
+<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/LinuxSetupAndKernelUpgrade/20.JPG"/>
 
 İndirilenler altında bulunan bu dosyayı /usr/src dizinine kopyalamak için cp /home/"Kullanıcı Adınız"/İndirilenler/linux-4.18.11.tar.xz /usr/src komutunu kullanıyoruz. Ancak "Erişim engellendi" hatası alacağız.
 
-![_config.yml]({{ site.baseurl }}/images/21.png)
+<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/LinuxSetupAndKernelUpgrade/21.JPG"/>
 
 Bu hatayı almamak için sudo –s komutu ile root moduna geçiyoruz.
 
 
-![_config.yml]({{ site.baseurl }}/images/22.png)
+<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/LinuxSetupAndKernelUpgrade/22.JPG"/>
 
 cp /home/"Kullanıcı Adınız"/İndirilenler/linux-4.18.11.tar.xz /usr/src komutunu tekrar giriyoruz ve sorunsuz bir şekilde çalışıyor.
 
 
-![_config.yml]({{ site.baseurl }}/images/23.png)
+<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/LinuxSetupAndKernelUpgrade/23.JPG"/>
 
 cd /usr/src komutu ile /usr/src dizinine geçiyoruz.
 
 
-![_config.yml]({{ site.baseurl }}/images/24.png)
+<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/LinuxSetupAndKernelUpgrade/24.JPG"/>
 
 tar –xJvf linux-4.18.11.tar.xz komutu ile tar.xz uzantılı dosyayı klasöre çıkartıyoruz.
 
 
-![_config.yml]({{ site.baseurl }}/images/25.png)
+<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/LinuxSetupAndKernelUpgrade/25.JPG"/>
 
 cd linux-4.18.11 komutu ile çıkarttığımız klasöre geçiş yapıyoruz.
 
 
-![_config.yml]({{ site.baseurl }}/images/26.png)
+<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/LinuxSetupAndKernelUpgrade/26.JPG"/>
 
 Bu dizindeki eski ayarları temizlemek için make proper komutunu kullanıyoruz. Fakat "make not found" hatası alacağız.
 
 
-![_config.yml]({{ site.baseurl }}/images/27.png)
+<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/LinuxSetupAndKernelUpgrade/27.JPG"/>
 
 apt install make komutu ile make paketini yüklüyoruz.
 
 
-![_config.yml]({{ site.baseurl }}/images/28.png)
+<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/LinuxSetupAndKernelUpgrade/28.JPG"/>
 
 Tekrar make proper komutunu kullanıyoruz.
 
 
-![_config.yml]({{ site.baseurl }}/images/29.png)
+<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/LinuxSetupAndKernelUpgrade/29.JPG"/>
 
 "gcc not found" hatası alacağız.
 
 
-![_config.yml]({{ site.baseurl }}/images/30.png)
+<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/LinuxSetupAndKernelUpgrade/30.JPG"/>
 
 apt install gcc komutu ile gcc paketini yüklüyoruz.
 
 
-![_config.yml]({{ site.baseurl }}/images/31.png)
+<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/LinuxSetupAndKernelUpgrade/31.JPG"/>
 
 Tekrar make proper komutunu kullanıyoruz.
 
 
-![_config.yml]({{ site.baseurl }}/images/32.png)
+<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/LinuxSetupAndKernelUpgrade/32.JPG"/>
 
 "bison not found" hatası alacağız.
 
 
-![_config.yml]({{ site.baseurl }}/images/33.png)
+<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/LinuxSetupAndKernelUpgrade/33.JPG"/>
 
 apt install bison komutu ile bison paketini yüklüyoruz.
 
 
-![_config.yml]({{ site.baseurl }}/images/34.png)
+<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/LinuxSetupAndKernelUpgrade/34.JPG"/>
 
 Tekrar make proper komutunu kullanıyoruz.
 
 
-![_config.yml]({{ site.baseurl }}/images/35.png)
+<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/LinuxSetupAndKernelUpgrade/35.JPG"/>
 
 "flex not found" hatası alacağız.
 
 
-![_config.yml]({{ site.baseurl }}/images/36.png)
+<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/LinuxSetupAndKernelUpgrade/36.JPG"/>
 
 apt install flex komutu ile flex paketini yüklüyoruz.
 
 
-![_config.yml]({{ site.baseurl }}/images/37.png)
+<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/LinuxSetupAndKernelUpgrade/37.JPG"/>
 
 Tekrar make proper komutunu kullanıyoruz.
 
 
-![_config.yml]({{ site.baseurl }}/images/38.png)
+<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/LinuxSetupAndKernelUpgrade/38.JPG"/>
 
 ".config not found" hatası alacağız. Bu hatayı gidermek için make menuconfig komutunu kullanıyoruz.
 
 
-![_config.yml]({{ site.baseurl }}/images/39.png)
+<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/LinuxSetupAndKernelUpgrade/39.JPG"/>
 
 ncurses yüklememiz gerektiğini söyleyecek.
 
 
-![_config.yml]({{ site.baseurl }}/images/40.png)
+<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/LinuxSetupAndKernelUpgrade/40.JPG"/>
 
 apt-get install libncurses5-dev komutu ile bu paketi yüklüyoruz.
 
 
-![_config.yml]({{ site.baseurl }}/images/41.png)
+<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/LinuxSetupAndKernelUpgrade/41.JPG"/>
 
 Tekrar make menuconfig komutunu kullanıyoruz.
 
 
-![_config.yml]({{ site.baseurl }}/images/42.png)
+<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/LinuxSetupAndKernelUpgrade/42.JPG"/>
 
 Kernel da düzenlemeler yapmak için hazırlanmış bir arayüz karşımıza gelecek.
 
 
-![_config.yml]({{ site.baseurl }}/images/43.png)
+<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/LinuxSetupAndKernelUpgrade/43.JPG"/>
 
 Herhangi bir ayarı değiştirmeden Exit ı seçiyoruz.
  
  
-![_config.yml]({{ site.baseurl }}/images/44.png)
+<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/LinuxSetupAndKernelUpgrade/44.JPG"/>
 
 Gelen ekranı onaylıyoruz.
 
-
-![_config.yml]({{ site.baseurl }}/images/45.png)
+<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/LinuxSetupAndKernelUpgrade/45.JPG"/>
 
 Konfigürasyonun tamamlandığını söyleyecek.
 
 
-![_config.yml]({{ site.baseurl }}/images/46.png)
+<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/LinuxSetupAndKernelUpgrade/46.JPG"/>
 
 make clean komutu ile yapılandırma dosyasındaki fazlalıkları temizliyoruz.
 
 
-![_config.yml]({{ site.baseurl }}/images/47.png)
+<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/LinuxSetupAndKernelUpgrade/47.JPG"/>
 
 Kernel imajını derlemek için make bzImage komutunu kullanıyoruz.
 
 
-![_config.yml]({{ site.baseurl }}/images/48.png)
+<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/LinuxSetupAndKernelUpgrade/48.JPG"/>
 
 Bir hata ile karşılaşacağız.
 
 
-![_config.yml]({{ site.baseurl }}/images/49.png)
+<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/LinuxSetupAndKernelUpgrade/49.JPG"/>
 
 Bu hatayı gidermek için apt-get install libssl-dev komutunu kullanıyoruz.
 
 
-![_config.yml]({{ site.baseurl }}/images/50.png)
+<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/LinuxSetupAndKernelUpgrade/50.JPG"/>
 
 Tekrar make bzImage komutunu kullanıyoruz.
 
 
-![_config.yml]({{ site.baseurl }}/images/51.png)
+<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/LinuxSetupAndKernelUpgrade/51.JPG"/>
 
 Modülleri derlemek için make modules komutunu kullanıyoruz.
  
  
-![_config.yml]({{ site.baseurl }}/images/52.png)
+<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/LinuxSetupAndKernelUpgrade/52.JPG"/>
 
 Derlenen modülleri /lib/modules içine taşımak için make modules_install komutunu kullanıyoruz.
 
 
-![_config.yml]({{ site.baseurl }}/images/53.png)
+<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/LinuxSetupAndKernelUpgrade/53.JPG"/>
 
 Son olarak make install komutunu kullanıyoruz.
 
 
-![_config.yml]({{ site.baseurl }}/images/54.png)
+<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/LinuxSetupAndKernelUpgrade/54.JPG"/>
 
 Kernel sürümünü kontrol etmek için uname –r komutunu giriyoruz.
 
 
-![_config.yml]({{ site.baseurl }}/images/55.png)
+<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/LinuxSetupAndKernelUpgrade/55.JPG"/>
 
 Eski sürümü gösterecek. Bu yüzden sistemi yeniden başlatıyoruz.
 
 
-![_config.yml]({{ site.baseurl }}/images/56.png)
+<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/LinuxSetupAndKernelUpgrade/56.JPG"/>
 
 Yeniden başlatma sırasında böyle bir hata ile karşılaşırsanız hatanın sebebi sanal makineye verilen RAM boyutundan kaynaklanıyor. Boyutu arttırırsanız sorun çözülecektir.
 
 
-![_config.yml]({{ site.baseurl }}/images/57.png)
+<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/LinuxSetupAndKernelUpgrade/57.JPG"/>
 
 Tekrar uname –r komutunu kullanıyoruz.
 
 
-![_config.yml]({{ site.baseurl }}/images/58.png)
+<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/LinuxSetupAndKernelUpgrade/58.JPG"/>
