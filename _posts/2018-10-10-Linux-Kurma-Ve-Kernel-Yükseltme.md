@@ -20,7 +20,7 @@ title: Linux Kurma Ve Kernel Yükseltme
 	<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/LinuxSetupAndKernelUpgrade/10.JPG"/>
 	<li>Ubuntu problemsiz bir şekilde başladı.</li>
 	<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/LinuxSetupAndKernelUpgrade/11.JPG"/>
-	<li>Eğer kurulum sırasında güncelleştirmeleri yapmayı sonraya bıraktıysanız güncellemeleri yapmak için Yazılım Güncelleştirici’ yi kullanalım.</li
+	<li>Eğer kurulum sırasında güncelleştirmeleri yapmayı sonraya bıraktıysanız güncellemeleri yapmak için Yazılım Güncelleştirici’ yi kullanalım.</li>
 	<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/LinuxSetupAndKernelUpgrade/12.JPG"/>
 	<li>Güncelleştirmeleri başlatıyoruz.</li>
 	<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/LinuxSetupAndKernelUpgrade/13.JPG"/>
