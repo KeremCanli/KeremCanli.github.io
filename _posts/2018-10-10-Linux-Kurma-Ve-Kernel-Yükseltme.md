@@ -10,6 +10,8 @@ title: Linux Kurma Ve Kernel Yükseltme
 	<br/>
 	<br/>
 	<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/LinuxSetupAndKernelUpgrade/2.JPG"/>
+	<br/>
+	<br/>
 	<li>Herhangi bir problem olabilir diye güncellemeleri sonra yapmayı tercih edebilirsiniz.</li>
 	<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/LinuxSetupAndKernelUpgrade/3.JPG"/>
 	<br/>
