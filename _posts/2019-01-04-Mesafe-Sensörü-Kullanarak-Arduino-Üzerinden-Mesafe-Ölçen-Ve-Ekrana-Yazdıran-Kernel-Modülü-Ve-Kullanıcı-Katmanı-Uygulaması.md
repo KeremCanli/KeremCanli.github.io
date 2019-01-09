@@ -197,7 +197,7 @@ float getDistance (int trig, int echo)
 	<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/DistanceMeasurer/1.JPG"/>
 	<br/>
 	<br/>
-	<li>Modülü yüklemek için c ve Makefile dosyasının bulunduğu dizinde terminali açıp yönetici izini alıyoruz.</li>
+	<li>Modülü yüklemek için c ve Makefile dosyasının bulunduğu dizinde terminali açıp <strong>sudo -s</strong> komutu ile yönetici izini alıyoruz.</li>
 	<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/DistanceMeasurer/2.JPG"/>
 	<br/>
 	<br/>
