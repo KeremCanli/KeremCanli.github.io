@@ -43,7 +43,7 @@ title: Linux Kurma Ve Kernel Yükseltme
 	<br/>
 	<br/>
 	<br/>
-	<li>Eğer kurulum sırasında güncelleştirmeleri yapmayı sonraya bıraktıysanız güncellemeleri yapmak için Yazılım Güncelleştirici’ yi kullanalım.</li>
+	<li>Eğer kurulum sırasında güncelleştirmeleri yapmayı sonraya bıraktıysanız güncellemeleri yapmak için Yazılım Güncelleştirici’ yi kullanıyoruz.</li>
 	<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/LinuxSetupAndKernelUpgrade/11.JPG"/>
 	<br/>
 	<br/>
@@ -66,7 +66,7 @@ title: Linux Kurma Ve Kernel Yükseltme
 	<br/>
 	<br/>
 	<br/>
-	<li>Kernel sürümünü öğrenmek için uname –r komutunu giriyoruz.</li>
+	<li><strong>uname –r</strong> komutunu ile kernel sürümünü öğreniyoruz.</li>
 	<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/LinuxSetupAndKernelUpgrade/16.JPG"/>
 	<br/>
 	<br/>
@@ -86,117 +86,117 @@ title: Linux Kurma Ve Kernel Yükseltme
 	<br/>
 	<br/>
 	<br/>
-	<li>İndirilenler altında bulunan bu dosyayı /usr/src dizinine kopyalamak için cp /home/"Kullanıcı Adınız"/İndirilenler/linux-4.18.11.tar.xz /usr/src komutunu kullanıyoruz. Ancak "Erişim engellendi" hatası alacağız.</li>
+	<li><strong>cp /home/"Kullanıcı Adınız"/İndirilenler/linux-4.18.11.tar.xz /usr/src</strong> komutunu ile indirilenler altında bulunan bu klasörü /usr/src dizinine kopyalıyoruz. Ancak "Erişim engellendi" hatası aldık.</li>
 	<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/LinuxSetupAndKernelUpgrade/20.JPG"/>
 	<br/>
 	<br/>
 	<br/>
-	<li>Bu hatayı almamak için sudo –s komutu ile root moduna geçiyoruz.</li>
+	<li><strong>sudo –s</strong> komutu ile bu hatayı almamak için root moduna geçiyoruz.</li>
 	<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/LinuxSetupAndKernelUpgrade/21.JPG"/>
 	<br/>
 	<br/>
 	<br/>
-	<li>cp /home/"Kullanıcı Adınız"/İndirilenler/linux-4.18.11.tar.xz /usr/src komutunu tekrar giriyoruz ve sorunsuz bir şekilde çalışıyor.</li>
+	<li><strong>cp /home/"Kullanıcı Adınız"/İndirilenler/linux-4.18.11.tar.xz /usr/src</strong> komutunu tekrar çalıştırıyoruz.</li>
 	<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/LinuxSetupAndKernelUpgrade/22.JPG"/>
 	<br/>
 	<br/>
 	<br/>
-	<li>cd /usr/src komutu ile /usr/src dizinine geçiyoruz.</li>
+	<li><strong>cd /usr/src</strong> komutu ile /usr/src dizinine gidiyoruz.</li>
 	<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/LinuxSetupAndKernelUpgrade/23.JPG"/>
 	<br/>
 	<br/>
 	<br/>
-	<li>tar –xJvf linux-4.18.11.tar.xz komutu ile tar.xz uzantılı dosyayı klasöre çıkartıyoruz.</li>
+	<li><strong>tar –xJvf linux-4.18.11.tar.xz</strong> komutu ile tar.xz uzantılı klasörü çıkartıyoruz.</li>
 	<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/LinuxSetupAndKernelUpgrade/24.JPG"/>
 	<br/>
 	<br/>
 	<br/>
-	<li>cd linux-4.18.11 komutu ile çıkarttığımız klasöre geçiş yapıyoruz.</li>
+	<li><strong>cd linux-4.18.11</strong> komutu ile çıkarttığımız klasöre gidiyoruz.</li>
 	<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/LinuxSetupAndKernelUpgrade/25.JPG"/>
 	<br/>
 	<br/>
 	<br/>
-	<li>Bu dizindeki eski ayarları temizlemek için make proper komutunu kullanıyoruz. Fakat "make not found" hatası alacağız.</li>
+	<li><strong>make proper</strong> komutunu ile bu klasördeki eski ayarları temizliyoruz. Fakat "make not found" hatası aldık.</li>
 	<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/LinuxSetupAndKernelUpgrade/26.JPG"/>
 	<br/>
 	<br/>
 	<br/>
-	<li>apt install make komutu ile make paketini yüklüyoruz.</li>
+	<li><strong>apt install make</strong> komutu ile make paketini yüklüyoruz.</li>
 	<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/LinuxSetupAndKernelUpgrade/27.JPG"/>
 	<br/>
 	<br/>
 	<br/>
-	<li>Tekrar make proper komutunu kullanıyoruz.</li>
+	<li><strong>make proper</strong> komutunu çalıştırıyoruz.</li>
 	<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/LinuxSetupAndKernelUpgrade/28.JPG"/>
 	<br/>
 	<br/>
 	<br/>
-	<li>"gcc not found" hatası alacağız.</li>
+	<li>"gcc not found" hatası aldık.</li>
 	<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/LinuxSetupAndKernelUpgrade/29.JPG"/>
 	<br/>
 	<br/>
 	<br/>
-	<li>apt install gcc komutu ile gcc paketini yüklüyoruz.</li>
+	<li><strong>apt install gcc</strong> komutu ile gcc paketini yüklüyoruz.</li>
 	<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/LinuxSetupAndKernelUpgrade/30.JPG"/>
 	<br/>
 	<br/>
 	<br/>
-	<li>Tekrar make proper komutunu kullanıyoruz.</li>
+	<li><strong>make proper</strong> komutunu çalıştırıyoruz.</li>
 	<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/LinuxSetupAndKernelUpgrade/31.JPG"/>
 	<br/>
 	<br/>
 	<br/>
-	<li>"bison not found" hatası alacağız.</li>
+	<li>"bison not found" hatası aldık.</li>
 	<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/LinuxSetupAndKernelUpgrade/32.JPG"/>
 	<br/>
 	<br/>
 	<br/>
-	<li>apt install bison komutu ile bison paketini yüklüyoruz.</li>
+	<li><strong>apt install bison</strong> komutu ile bison paketini yüklüyoruz.</li>
 	<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/LinuxSetupAndKernelUpgrade/33.JPG"/>
 	<br/>
 	<br/>
 	<br/>
-	<li>Tekrar make proper komutunu kullanıyoruz.</li>
+	<li><strong>make proper</strong> komutunu çalıştırıyoruz.</li>
 	<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/LinuxSetupAndKernelUpgrade/34.JPG"/>
 	<br/>
 	<br/>
 	<br/>
-	<li>"flex not found" hatası alacağız.</li>
+	<li>"flex not found" hatası aldık.</li>
 	<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/LinuxSetupAndKernelUpgrade/35.JPG"/>
 	<br/>
 	<br/>
 	<br/>
-	<li>apt install flex komutu ile flex paketini yüklüyoruz.</li>
+	<li><strong>apt install flex</strong> komutu ile flex paketini yüklüyoruz.</li>
 	<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/LinuxSetupAndKernelUpgrade/36.JPG"/>
 	<br/>
 	<br/>
 	<br/>
-	<li>Tekrar make proper komutunu kullanıyoruz.</li>
+	<li><strong>make proper</strong> komutunu çalıştırıyoruz.</li>
 	<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/LinuxSetupAndKernelUpgrade/37.JPG"/>
 	<br/>
 	<br/>
 	<br/>
-	<li>".config not found" hatası alacağız. Bu hatayı gidermek için make menuconfig komutunu kullanıyoruz.</li>
+	<li>".config not found" hatası aldık. <strong>make menuconfig</strong> komutunu bu hatayı gidermek için çalıştırıyoruz.</li>
 	<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/LinuxSetupAndKernelUpgrade/38.JPG"/>
 	<br/>
 	<br/>
 	<br/>
-	<li>ncurses yüklememiz gerektiğini söyleyecek.</li>
+	<li>ncurses yüklememiz gerektiğini söyledi.</li>
 	<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/LinuxSetupAndKernelUpgrade/39.JPG"/>
 	<br/>
 	<br/>
 	<br/>
-	<li>apt-get install libncurses5-dev komutu ile bu paketi yüklüyoruz.</li>
+	<li><strong>apt-get install libncurses5-dev</strong> komutu ile bu paketi yüklüyoruz.</li>
 	<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/LinuxSetupAndKernelUpgrade/40.JPG"/>
 	<br/>
 	<br/>
 	<br/>
-	<li>Tekrar make menuconfig komutunu kullanıyoruz.</li>
+	<li><strong>make menuconfig</strong> komutunu çalıştırıyoruz.</li>
 	<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/LinuxSetupAndKernelUpgrade/41.JPG"/>
 	<br/>
 	<br/>
 	<br/>
-	<li>Kernel da düzenlemeler yapmak için hazırlanmış bir arayüz karşımıza gelecek.</li>
+	<li>Kernel da düzenlemeler yapmak için hazırlanmış bir arayüz karşımıza geldi.</li>
 	<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/LinuxSetupAndKernelUpgrade/42.JPG"/>
 	<br/>
 	<br/>
@@ -211,57 +211,57 @@ title: Linux Kurma Ve Kernel Yükseltme
 	<br/>
 	<br/>
 	<br/>
-	<li>Konfigürasyonun tamamlandığını söyleyecek.</li>
+	<li>Konfigürasyonun tamamlandığını söyledi.</li>
 	<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/LinuxSetupAndKernelUpgrade/45.JPG"/>
 	<br/>
 	<br/>
 	<br/>
-	<li>make clean komutu ile yapılandırma dosyasındaki fazlalıkları temizliyoruz.</li>
+	<li><strong>make clean</strong> komutu ile yapılandırma dosyasındaki fazlalıkları temizliyoruz.</li>
 	<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/LinuxSetupAndKernelUpgrade/46.JPG"/>
 	<br/>
 	<br/>
 	<br/>
-	<li>Kernel imajını derlemek için make bzImage komutunu kullanıyoruz.</li>
+	<li><strong>make bzImage</strong> komutunu ile kernel imajını derliyoruz.</li>
 	<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/LinuxSetupAndKernelUpgrade/47.JPG"/>
 	<br/>
 	<br/>
 	<br/>
-	<li>Bir hata ile karşılaşacağız.</li>
+	<li>Bir hata aldık.</li>
 	<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/LinuxSetupAndKernelUpgrade/48.JPG"/>
 	<br/>
 	<br/>
 	<br/>
-	<li>Bu hatayı gidermek için apt-get install libssl-dev komutunu kullanıyoruz.</li>
+	<li><strong>apt-get install libssl-dev</strong> komutunu bu hatayı gidermek için çalıştırıyoruz.</li>
 	<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/LinuxSetupAndKernelUpgrade/49.JPG"/>
 	<br/>
 	<br/>
 	<br/>
-	<li>Tekrar make bzImage komutunu kullanıyoruz.</li>
+	<li><strong>make bzImage</strong> komutunu çalıştırıyoruz.</li>
 	<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/LinuxSetupAndKernelUpgrade/50.JPG"/>
 	<br/>
 	<br/>
 	<br/>
-	<li>Modülleri derlemek için make modules komutunu kullanıyoruz.</li>
+	<li><strong>make modules</strong> komutunu ile modülleri derliyoruz.</li>
 	<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/LinuxSetupAndKernelUpgrade/51.JPG"/>
 	<br/>
 	<br/>
 	<br/>
-	<li>Derlenen modülleri /lib/modules içine taşımak için make modules_install komutunu kullanıyoruz.</li>
+	<li><strong>make modules_install</strong> komutunu ile derlenen modülleri /lib/modules dizinine taşıyoruz.</li>
 	<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/LinuxSetupAndKernelUpgrade/52.JPG"/>
 	<br/>
 	<br/>
 	<br/>
-	<li>Son olarak make install komutunu kullanıyoruz.</li>
+	<li><strong>make install</strong> komutunu çalıştırıyoruz.</li>
 	<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/LinuxSetupAndKernelUpgrade/53.JPG"/>
 	<br/>
 	<br/>
 	<br/>
-	<li>Kernel sürümünü kontrol etmek için uname –r komutunu giriyoruz.</li>
+	<li><strong>uname –r</strong> komutunu ile kernel sürümünü kontrol ediyoruz.</li>
 	<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/LinuxSetupAndKernelUpgrade/54.JPG"/>
 	<br/>
 	<br/>
 	<br/>
-	<li>Eski sürümü gösterecek. Bu yüzden sistemi yeniden başlatıyoruz.</li>
+	<li>Eski sürümü gösterdi. Bu yüzden sistemi yeniden başlatıyoruz.</li>
 	<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/LinuxSetupAndKernelUpgrade/55.JPG"/>
 	<br/>
 	<br/>
@@ -271,11 +271,11 @@ title: Linux Kurma Ve Kernel Yükseltme
 	<br/>
 	<br/>
 	<br/>
-	<li>Tekrar uname –r komutunu kullanıyoruz.</li>
+	<li><strong>uname –r</strong> komutunu çalıştırıyoruz.</li>
 	<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/LinuxSetupAndKernelUpgrade/57.JPG"/>
 	<br/>
 	<br/>
-	<li></li>
+	<li>Kernel başarıyla yükseltilmiş.</li>
 	<img src="https://raw.githubusercontent.com/KeremCanli/KeremCanli.github.io/master/images/LinuxSetupAndKernelUpgrade/58.JPG"/>
 	<br/>
 	<br/>
