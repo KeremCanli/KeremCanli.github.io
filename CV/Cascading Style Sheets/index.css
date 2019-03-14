@@ -1,0 +1,97 @@
+body {font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;}
+.photo {padding: 100px 60px 0 60px;}
+.photo > img {width: 100%;
+              height: 100%;
+              border-radius: 50%;}
+.name-surname {padding: 40px 25px 0 25px;}
+.name-surname > h1 {margin: 0;
+                    padding: 0;
+                    font-size: 40px;}
+.job {padding: 20px 25px 0 25px;} 
+.job > span {font-size: 25px;}
+.brackets {padding-top: 40px;
+           border-bottom: 6px solid #f52b2b;}
+.about-me {padding: 40px 25px 0 25px;}
+.about-me > span {font-size: 20px;}
+.status {padding: 20px 25px 0 25px;}
+.status > span {font-size: 20px;
+                font-weight: bold;}
+.value {padding: 5px 35px 0 35px;}
+.value > span {font-size: 18px;}
+.icon {padding-top: 20px;}
+.information {padding-top: 5px;}
+.information > span {font-size: 18px;}
+.information > span > a {color: #000000;
+                         font-size: 18px;
+                         text-decoration: none;}
+.header {padding: 40px 25px 0 25px;}
+.header > h1 {margin: 0;
+              padding: 0;}
+.year {padding: 35px 17.5px 0 35px;}
+.year > span {font-size: 24px;}
+.school {padding: 35px 35px 0 17.5px;}
+.school > span {font-size: 24px;}
+.description {padding: 5px 35px 0 17.5px;
+              text-align: left;}
+.description > span {color: #cccccc;
+                     font-size: 20px;}
+.company {padding: 35px 35px 0 17.5px;}
+.company > span {font-size: 24px;}
+.position {padding: 5px 17.5px 0 35px;}
+.position > span {color: #cccccc;
+                  font-size: 20px;
+                  font-style: italic;}
+.attribute {padding: 15px 17.5px 0 35px;
+            text-align: right;}
+.attribute > span {font-size: 25px;
+                   line-height: 34px;}
+.level {padding: 16px 35px 0 17.5px;}
+.level > meter {width: 61%;
+                height: 5px;
+                background-color: white;}
+.level > meter::-webkit-meter-optimum-value {background: #f52b2b;}
+.level > meter::-moz-meter-bar {background: #f52b2b;}
+@media (max-width: 1024px) {.photo {padding: 75px 50px 0 50px;}
+                            .name-surname > h1 {font-size: 33px;}
+                            .job > span {font-size: 22px;}
+                            .about-me > span {font-size: 18px;}
+                            .status > span {font-size: 18px;}
+                            .value > span {font-size: 16px;}
+                            .information > span {font-size: 16px;}
+                            .information > span > a {font-size: 16px;}
+                            .header > h1  {font-size: 30px;}
+                            .year > span {font-size: 22px;}
+                            .school > span {font-size: 22px;}
+                            .description > span {font-size: 18px;}
+                            .company > span {font-size: 22px;}
+                            .position > span {font-size: 18px;}
+                            .attribute > span {font-size: 23px;}}
+@media (max-width: 768px) {.name-surname > h1 {font-size: 31px;}
+                           .job > span {font-size: 20px;}
+                           .about-me > span {font-size: 16px;}
+                           .status > span {font-size: 16px;}
+                           .value > span {font-size: 14px;}
+                           .information > span {font-size: 14px;}
+                           .information > span > a {font-size: 14px;}
+                           .header > h1  {font-size: 28px;}
+                           .year > span {font-size: 20px;}
+                           .school > span {font-size: 20px;}
+                           .description > span {font-size: 16px;}
+                           .company > span {font-size: 20px;}
+                           .position > span {font-size: 16px;}
+                           .attribute > span {font-size: 21px;}}
+@media (max-width: 667px) {.photo {padding: 50px 30% 0 30%;}
+                           .name-surname > h1 {font-size: 32px;}
+                           .job > span {font-size: 21px;}
+                           .about-me > span {font-size: 17px;}
+                           .status > span {font-size: 17px;}
+                           .value > span {font-size: 15px;}
+                           .information > span {font-size: 15px;}
+                           .information > span > a {font-size: 15px;}
+                           .header > h1  {font-size: 29px;}
+                           .year > span {font-size: 20px;}
+                           .school > span {font-size: 20px;}
+                           .description > span {font-size: 17px;}
+                           .company > span {font-size: 21px;}
+                           .position > span {font-size: 17px;}
+                           .attribute > span {font-size: 22px;}}
