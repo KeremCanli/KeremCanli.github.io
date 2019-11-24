@@ -1,0 +1,44 @@
+.side-menu {
+    width: 50px;
+}
+
+.side-menu-container {
+    background-color: #272421;
+    height: 100vh;
+    max-height: 1270px;
+    min-height: 845px;
+}
+
+.side-menu-item {
+    height: 7%;
+}
+
+.side-menu-item:first-child {
+    height: 12%;
+}
+
+.link {
+    align-items: center;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    pointer-events: none;
+    text-decoration: none;
+    width: 100%;
+}
+
+.logo {
+    height: 50%;
+    pointer-events: auto;
+    width: 50%;
+}
+
+.icon {
+    color: #b1b1b1;
+    font-size: 20px;
+    pointer-events: auto;
+}
+
+.icon-active {
+    color: #66cc66;
+}

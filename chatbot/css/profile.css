@@ -1,0 +1,698 @@
+html,body
+{
+    height: 100%;
+    background-size: cover;
+    margin-left: 0px;
+    font-family: 'Roboto', sans-serif;
+    margin-right: 0px;
+    margin-top: 0px;
+    margin-bottom: 8px;
+}
+.fullSize{
+    height: 100%;
+    width: 100%;
+}
+#containerBox{
+    background-color: rgb(236, 235, 235);
+    padding-left: 1.5%;
+    padding-top: 1.5%;
+    padding-right: 1.5%;
+    padding-bottom: 1.5%;
+}
+#ciroArea{
+    text-align: center;
+    vertical-align: middle;
+}
+.ciroText{
+    font-size: 12px;
+    margin-top: 3px;
+}
+#ciroMoney{
+    font-size: 20px;
+    margin-top: 3px;
+    font-weight: bold;
+}
+#myChart{
+    height: 250px;
+    width: 100%;
+    padding: 10px;
+    border-radius: 25px;
+}
+#progressCircle{
+    padding-top: 10px;
+}
+canvas{
+    width: 100% !important;
+    height: 100% !important;
+}
+.progressText{
+    font-size: 14px;
+    font-weight: bold;
+}
+.personNameChart{
+    position: absolute;
+    font-size: 30px;
+    top: 8%;
+    padding-left: 5%;
+    z-index: 1;
+}
+.unselectable 
+{
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+ 
+    /*
+      Introduced in IE 10.
+      See http://ie.microsoft.com/testdrive/HTML5/msUserSelect/
+    */
+    -ms-user-select: none;
+    user-select: none;
+ }
+#profileBox{
+    background-color: #282421;
+    border-radius: 5px;
+    color: white;
+    min-height: 15%;
+    padding:5px;
+}
+.avatarIMG{
+    border-radius: 50%;
+    border:2px solid white;
+    width: 150px;
+    height: 150px;
+}
+.avatarDIV{
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+  vertical-align: middle;
+}
+#menuBox{
+    margin-top: 20px;
+}
+#menuBoxRight{
+    text-align: right;
+}
+.menuItem{
+    padding:10px 20px;
+    font-size: 12px;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: #FDFDFD;
+    border-radius: 25px;
+    transition-duration: 0.3s;
+}
+.menuItem:hover{
+    background-color: black;
+    color: white;
+    transition-duration: 0.3s;
+}
+.menuItemClick{
+    background-color: black;
+    color: white;
+    transition-duration: 0.3s;
+}
+.menuItemOnOff{
+    padding:10px 20px;
+    font-size: 12px;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: #FDFDFD;
+    border-radius: 25px;
+    transition-duration: 0.3s;
+}
+.menuItemOnState
+{
+    padding:10px 20px;
+    font-size: 12px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color:#1FD40B;
+    border-radius: 25px;
+    transition-duration: 0.3s;
+}
+.menuItemOffState
+{
+    padding:10px 20px;
+    font-size: 12px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: #ff3838;
+    border-radius: 25px;
+    transition-duration: 0.3s;
+}
+
+.boxesLabel{
+    font-size: 16px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+.daysRow{
+    border-radius: 5px;
+    text-align: center;
+    background-color: white;
+    min-height: 120px;
+}
+.daysColumn{
+    vertical-align: middle;
+}
+.daysButton{
+    color: white;
+    font-size: 0.9rem;
+    border-radius: 25px;
+    padding: 10px 20px;
+    text-decoration: none;
+    display:block;
+    background-color: rgb(61, 187, 59);
+    transition-duration: 0.3s;
+}
+.daysButton:hover{
+    background-color: rgb(43, 221, 40);
+    transition-duration: 0.3s;
+    top:-5px;
+}
+.daysButtonPassive{
+    color: black;
+    font-size: 0.9rem;
+    border-radius: 25px;
+    padding: 10px 25px;
+    text-decoration: none;
+    background-color: white;
+    display:block;
+    border: 1px solid #ccc;
+    transition-duration: 0.3s;
+}
+.daysButtonPassive:hover{
+    background-color: rgb(211, 211, 211);
+    transition-duration: 0.3s;
+}
+.timeDiv{
+    margin-top: 10px;
+    font-size: 0.8rem;
+    color:grey;
+}
+.clockStyle{
+    font-size: 1rem;
+}
+.selectBoxStyle{
+    padding-left: 8%;
+    padding-top: 10px;
+    font-size: 0.9rem;
+    color:rgb(160, 160, 160);
+    padding-bottom: 10px;
+    width: 85%;
+    border-radius: 20px;
+    background-color: white;
+    border:1px solid #ccc;
+}
+.selectBoxStyle:focus{
+    outline: none;
+}
+.selectBoxStyleRight{
+    color:rgb(160, 160, 160);
+    padding-left: 5%;
+    padding-top: 10px;
+    font-size: 0.9rem;
+    padding-bottom: 10px;
+    width: 55%;
+    border-radius: 20px;
+    background-color: white;
+    border:1px solid #ccc;
+}
+.selectBoxStyleRight:focus{
+    outline: none;
+}
+.inputTypeStyle{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 8%;
+    font-size: 0.9rem;
+    border:1px solid #ccc;
+    border-radius: 20px;
+    width: 80%;
+}
+.inputTypeStyle::placeholder{
+    color:rgb(177, 175, 175);
+}
+.inputTypeStyle:focus{
+    outline: none;
+}
+.ibanInputStyle{
+    width: 100%;
+    border-radius: 5px;
+}
+.ibanInputText{
+    min-width: 10%;
+    float: left;
+    color: rgb(160, 160, 160);
+    text-align: center;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border:1px solid #ccc;
+    border-right:none;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.ibanInputThis{
+    width: 85%;
+    height: 100%;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    border-top-right-radius: 10px;
+    border:1px solid #ccc;
+    border-bottom-right-radius: 10px;
+}
+.ibanInputThis:focus{
+    outline: none;
+}
+.submitButtonFormArea{
+    margin-top: 20px;
+}
+.rightArea{
+    background-color: white;
+    border-radius: 5px;
+    
+    padding-bottom: 20px;
+}
+.addressArea{
+    padding-top: 5%;
+    padding-right: 5%;
+    padding-left: 5%;
+}
+.paymentBox{
+    border-radius: 5px;
+    background-color: white;
+    min-height: 400px;
+    padding-left: 2%;
+}
+.paymentArea{
+    padding-top: 5px;
+    padding-left: 5px;
+}
+.paymentAreaHeader{
+    font-size: 16px;
+    font-weight: bold;
+}
+.paymentRow{
+    margin-top: 30px;
+}
+.submitButtonForm{
+    display: block;
+    padding: 15px 25px;
+    color: white;
+    background-color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 25px;
+    text-align: center;
+}
+#radio1{
+    display: none;
+}
+#radio2{
+    display: none;
+}
+#radio3{
+    display: none;
+}
+.paymentMethodATag{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 0.9rem;
+    display: block;
+    color: rgb(161, 160, 160);
+    border-radius: 25px;
+    background-color: white;
+    border: 1px solid rgb(175, 175, 175);
+    text-decoration: none;
+    text-align: center;
+    transition-duration: 0.3s;
+}
+.paymentMethodATagClick{
+    background-color: rgb(140, 245, 138);
+    color:white;
+    transition-duration: 0.3s;
+}
+.circleStyle{
+    color: rgb(61, 187, 59);
+    font-size: 20px;
+}
+#mapArea{
+    width: 100%;
+    min-height: 150px;
+    border-radius: 3px;
+    text-align: center;
+    background-image: url('../image/profile-page/map.png');
+    background-size: cover;
+}
+.addressAreaHead{
+    font-size: 14px;
+    text-transform: uppercase;
+    color:gray;
+}
+.addressAreaText{
+    color: black;
+    font-size: 0.9rem;
+}
+.hrLine{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    height:1px;
+    background-color:rgba(211, 208, 208, 0.8);
+    width: 100%;
+}
+@media (max-width: 1024px) /* lg */
+{
+    .fullSize{
+        width: 100%;
+        height: 100%;
+    }
+    .avatarIMG{
+        width: 100%;
+        height: 25%;
+    }
+    .daysColumn{
+        margin-top: 10px;
+    }
+    .timeDiv{
+        margin-bottom: 10px;
+    }
+    .paymentRow{
+        margin-top: 20px;
+    }
+    .ibanInputThis{
+        width: 80%;
+    }
+    .submitButtonForm{
+        padding: 10px 20px;
+    }
+    .paymentBox{
+        min-height: 100%;
+    }
+    .paymentAreaHeader{
+        font-size: 14px;
+    }
+    .submitButtonFormArea{
+        margin-bottom: 20px;
+        margin-top: 15px;
+    }
+    .addressAreaHead{
+        font-size: 13px;
+    }
+    .addressAreaText{
+        font-size: 0.8rem;
+    }
+    .hrLine{
+        margin-top: 11px;
+        margin-bottom: 11px;
+    }
+    .boxesLabel{
+        font-size: 15px;
+        margin-top: 25px;
+    }
+    .inputTypeStyle{
+        font-size: 0.8rem;
+    }
+    .selectBoxStyle{
+        font-size: 0.8rem;
+    }
+    .paymentMethodATag{
+        font-size: 0.8rem;
+        padding-bottom: 8px;
+        padding-top: 8px;
+    }
+    .selectBoxStyleRight{
+        font-size: 0.8rem;
+        width: 50%;
+    }
+    .ciroText{
+        font-size: 12px;
+    }
+    #ciroMoney{
+        font-size: 18px;
+    }
+    .progressText{
+        font-size: 13px;
+    }
+    canvas{
+        width: 100% !important;
+        height: 85% !important;
+    }
+    .menuItem{
+
+    }
+} 
+@media (max-width: 768px) /* md */
+{
+    .fullSize{
+        width: 100%;
+        height: 100%;
+    }
+    .avatarIMG{
+        width: 100%;
+        height: 20%;
+    }
+   
+    .ciroText{
+        font-size: 11px;
+    }
+    #ciroMoney{
+        font-size: 17px;
+    }
+    canvas{
+        width: 100% !important;
+        height: 75% !important;
+    }
+    #progressCircle{
+        margin-left: 10%;
+    }
+    .personNameChart{
+        font-size: 20px;
+    }
+    .boxesLabel{
+        font-size: 14px;
+        margin-top: 20px;
+    }
+    .daysButton{
+        margin-top: 5%;
+        font-size: 13px;
+    }
+    .timeDiv{
+        margin-bottom: 5%;
+        margin-top: 5px;
+    }
+    .daysButtonPassive{
+        font-size: 13px;
+        margin-top: 5px;
+    }
+    .paymentAreaHeader{
+        font-size: 13px;
+    }
+    .paymentRow{
+        margin-top: 10px;
+        padding: 5px 5px;
+
+    }
+    .paymentBox{
+        min-height: 100%;
+    }
+    .ibanInputStyle{
+
+    }
+    .ibanInputThis{
+        width: 80%;
+        font-size: 12px;
+    }
+    .ibanInputText{
+        font-size: 15px;
+    }
+    .submitButtonFormArea{
+        margin-top: 15px;
+    }
+    .submitButtonForm{
+        padding: 7px;
+        margin-bottom: 5%;
+    }
+    .addressAreaHead{
+        font-size: 13px;
+    }
+    .addressAreaText{
+        font-size: 12px;
+        margin-bottom: 5px;
+        margin-top: 5px;
+    }
+    .hrLine{
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+    .paymentMethodATag{
+        font-size: 12px;
+    }
+    .fa{
+        font-size: 14px;
+    }
+    #serviceMinAvg{
+        font-size: 12px;
+        width: 60%;
+    }
+    #minServicePayment{
+        font-size: 12px;
+    }
+    #artisanNumber{
+        font-size: 12px;
+    }
+    #serviceDistance{
+        font-size: 12px;
+        width: 50%;
+    }
+}
+  
+@media (max-width: 667px) /* sm */
+{
+    .fullSize{
+        width: 100%;
+        height: 100%;
+    }
+    .personNameChart{
+        font-size: 17px;
+
+    }
+    canvas{
+       
+    }
+   
+    .avatarIMG{
+       width: 100%;
+       height: 15%;
+
+    }
+    #ciroArea{
+        padding: 5px 5px;
+
+    }
+    .ciroText{
+        font-size: 10px;
+    }
+    #ciroMoney{
+       font-size: 15px;
+
+    }
+    #myChart{
+       padding: 5px 5px;
+       
+    }
+    canvas{
+        padding: 10px 10px;
+        
+    }
+    .progressText{
+       font-size: 12px;
+    }
+   
+    #menuBox{
+       
+    }
+    .menuItem{
+        font-size: 10px;
+        padding: 10px;
+    }
+    #menuBoxRight{
+       
+    }
+    .menuItemOnOff{
+        font-size: 10px;
+        padding: 10px;
+    }
+    .daysButton{
+        
+        font-size: 10px;
+    }
+    .daysButtonPassive{
+       
+        font-size: 10px;
+    }
+    .boxesLabel{
+        font-size: 10px;
+        margin-top: 20px;
+
+    }
+    .daysRow{
+        padding: 4px;
+    }
+    .daysColumn{
+        margin-top: 6px;
+
+    }
+    .timeDiv{
+        font-size: 10px;
+        margin-bottom: 5px;
+    }
+    .rightArea{
+        height: 490px;
+    }
+    .addressAreaHead{
+        font-size: 12px;
+        margin-bottom: 3px;
+    }
+    .addressAreaText{
+        font-size: 10px;
+    }
+    .hrLine{
+        margin-top: 7px;
+        margin-bottom: 7px;
+    }
+    .paymentArea{
+
+    }
+    .paymentAreaHeader{
+        font-size: 11px;
+    }
+    .paymentBox{
+        width: 207%;
+        min-height: 100%;
+    }
+    .paymentMethodATag{
+        font-size: 10px;
+    }
+    .fa{
+        font-size: 13px;
+    }
+    #serviceDistance{
+        font-size: 10px;
+    }
+    #artisanNumber{
+        font-size: 10px;
+    }
+    #serviceMinAvg{
+        font-size: 10px;
+    }
+    #minServicePayment{
+        font-size: 10px;
+    }
+    .paymentRow{
+        margin-top: 10px;
+    }
+    .ibanInputThis{
+        width: 60%;
+        font-size: 11px;
+    }
+    .ibanInputText{
+        font-size: 14px;
+    }
+   
+    .submitButtonForm{
+        font-size: 12px;
+        margin-bottom: 15px;
+    }
+}

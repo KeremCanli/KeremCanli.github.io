@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+        <link href="css/all.min.css" rel="stylesheet">
+        <link href="css/flexiblegs-css.css" rel="stylesheet">
+        <link href="css/side-menu.css" rel="stylesheet">
+        <link href="css/normalize.min.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
+        <meta charset="UTF-8">
+        <meta content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, width=device-width" name="viewport">
+        <script src="js/jquery-3.4.1.min.js"></script>
+        <link rel="icon" href="image/menu/logo1.png">
+        <script src="js/sweetalert2@8.js"></script>
+        <link href="css/daily.css" rel="stylesheet">
+        <link href="css/our-font.css" rel="stylesheet">
+        <script src="js/circle-progress.js"></script>
+        <script src="js/chart.js"></script>
+        <title>Daily Page</title>
+    </head>
+    <body>
+        <div class="wrap xl-table" style="height: 100%;">
+            <div class="col side-menu">
+                <div class="side-menu-container wrap xl-center xl-1">
+                    <div class="col side-menu-logo">
+                        <img alt="logo" src="image/menu/logo1.png">
+                    </div>
+                    <div class="col side-menu-item side-menu-item-active">
+                        <i class="fas fa-th"></i>
+                    </div>
+                    <div class="col side-menu-item">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <div class="col side-menu-item  ">
+                        <i class="fas fa-user-circle"></i>
+                    </div>
+                    <div class="col side-menu-item">
+                        <i class="fas fa-globe-asia"></i>
+                    </div>
+                </div>
+            </div>
+            <div id="containerBox" class="col">
+                <div class="wrap xl-1 sm-1 xl-outside-40 sm-outside-16">
+                    <div class="col graphicHeader">
+                        <div>Günlük Mesajlaşma Çizelgesi</div>
+                    </div>
+                    <div class="col graphicBox">
+                        <canvas id="graphChart"></canvas>
+                    </div>
+                    <div class="col graphicHeader">
+                        <div>İlgili Sosyal Medyadan Gelen Kullanıcı Sayısı</div>
+                    </div>
+                    <div class="col socialBox">
+                        <div class="wrap xl-1 sm-1">
+                            <div class="col socialBoxDiv">
+                                <div class="wrap sm-5 md-5 lg-5 sm-gutter-8 xl-gutter-16">
+                                    <div class="col xl-3-10 mainText">Sosyal Mecra</div>
+                                    <div class="col xl-1-10 mainText">Popülarite</div>
+                                    <div class="col xl-2-10 mainText">Değişim Grafiği</div>
+                                    <div class="col xl-2-10 mainText">Günlük Ortalama Mesaj</div>
+                                    <div class="col xl-2-10 mainText">Toplam Mesaj</div>
+                                </div>
+                            </div>
+                            <div class="col socialBoxDiv">
+                                <div class="wrap sm-5 md-5 lg-5 sm-gutter-8 xl-gutter-16">
+                                    <div class="col xl-3-10 dataText">
+                                        <i class="fab fa-facebook-messenger facebookcolor brandLogo"></i>
+                                        <span id="socialMedia">Facebook Messenger</span>
+                                    </div>
+                                    <div class="col xl-1-10 dataText">30%</div>
+                                    <div class="col xl-2-10 dataText">Değişim Grafiği</div>
+                                    <div class="col xl-2-10 dataText">188</div>
+                                    <div class="col xl-2-10 dataText">12,773</div>
+                                </div>
+                            </div>
+                            <div class="col socialBoxDiv">
+                                <div class="wrap sm-5 md-5 lg-5 sm-gutter-8 xl-gutter-16">
+                                    <div class="col xl-3-10 dataText">
+                                        <i class="fab fa-whatsapp whatsappcolor brandLogo"></i>
+                                        <span id="socialMedia">WhatsApp</span>
+                                    </div>
+                                    <div class="col xl-1-10 dataText">41%</div>
+                                    <div class="col xl-2-10 dataText">Değişim Grafiği</div>
+                                    <div class="col xl-2-10 dataText">355</div>
+                                    <div class="col xl-2-10 dataText">10,886</div>            
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="js/daily.js"></script>
+</html>
