@@ -1,2 +1,0 @@
-giriş ekranındaki illüstrasyon ile form arasında gölge var ve gölge renginin hex kodu #8d8d8d.
-menü renginin hex kodu #272421, menü üzerindeki ikonların renginin hex kodu #b1b1b1, menü üzerindeki ikonların aktif olduklarındaki rengin hex kodu #66cc66.
