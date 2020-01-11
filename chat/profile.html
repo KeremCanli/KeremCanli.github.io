@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+        <link href="css/all.min.css" rel="stylesheet">
+        <link href="css/flexiblegs-css.min.css" rel="stylesheet">
+        <link href="css/font.css" rel="stylesheet">
+        <link href="css/normalize.min.css" rel="stylesheet">
+        <link href="css/profile.css" rel="stylesheet">
+        <link href="css/side-menu.css" rel="stylesheet">
+        <meta charset="UTF-8">
+        <meta content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, width=device-width" name="viewport">
+        <script src="js/chart.min.js"></script>
+        <script src="js/jquery-3.4.1.min.js"></script>
+        <script src="js/circle-progress.min.js"></script>
+        <script src="js/menu.js"></script>
+        <script src="js/profile.js"></script>
+        <title></title>
+    </head>
+    <body>
+        <div class="lg-table md-table sm-table wrap xl-table">
+            <div class="col lg-hidden md-hidden side-menu sm-hidden">
+                <div class="lg-1 md-1 side-menu-container sm-1 wrap xl-1">
+                    <div class="col side-menu-item">
+                        <a class="link" href="main.html">
+                            <img alt="logo" class="logo" src="image/menu/logo.png">
+                        </a>
+                    </div>
+                    <div class="col side-menu-item">
+                        <a class="link" href="daily.html">
+                            <i class="fas fa-th icon"></i>
+                        </a>
+                    </div>
+                    <div class="col side-menu-item">
+                        <a class="link" href="main.html">
+                            <i class="fas fa-comments icon"></i>
+                        </a>
+                    </div>
+                    <div class="col side-menu-item">
+                        <a class="link" href="profile.html">
+                            <i class="fas fa-user-circle icon icon-active"></i>
+                        </a>
+                    </div>
+                    <div class="col side-menu-item">
+                        <a class="link" href="help.html">
+                            <i class="fas fa-globe-asia icon"></i>
+                        </a>
+                    </div>
+                    <div class="col lg-not-hidden side-menu-item xl-hidden">
+                        <button class="quit-button">
+                            <i class="fas fa-power-off quit-button-icon"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="lg-outside-24 lg-1 md-outside-24 md-1 sm-outside-40 sm-1 wrap xl-outside-40 xl-1">
+                    <div class="col space"></div>
+                    <div class="col">
+                        <div class="header-container lg-gutter-24 lg-outside-24 lg-right lg-1 md-gutter-24 md-outside-24 md-right md-1 sm-gutter-40 sm-outside-24 sm-right sm-1 wrap xl-gutter-40 xl-outside-40 xl-right xl-1">
+                            <div class="col">
+                                <button class="exit-button">
+                                    <i class="exit-button-icon fas fa-power-off"></i>
+                                </button>
+                                <button class="hamburger-menu-open">
+                                    <i class="fas fa-bars hamburger-menu-open-icon"></i>
+                                </button>
+                                <button class="hamburger-menu-close">
+                                    <i class="fas fa-times hamburger-menu-close-icon"></i>
+                                </button>
+                            </div>
+                            <div class="col">
+                                <div class="lg-gutter-24 lg-middle lg-outside-8 lg-table md-gutter-24 md-middle md-outside-8 md-table sm-center sm-gutter-16 sm-middle sm-normal sm-outside-16 wrap xl-gutter-40 xl-middle xl-outside-40 xl-table">
+                                    <div class="col header-item-first-item">
+                                        <img alt="avatar" class="avatar" src="image/profile-page/avatar.jpg">
+                                    </div>
+                                    <div class="col sm-hidden">
+                                        <div class="lg-1 md-1 wrap xl-1">
+                                            <div class="col">
+                                                <span class="user-name-surname">Elif Aslan</span>
+                                            </div>
+                                            <div class="col">
+                                                <div class="chart-container">
+                                                    <canvas id="chart"></canvas>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col header-item-last-item">
+                                        <div class="lg-center lg-1 md-center md-1 sm-center sm-1 wrap xl-center xl-1">
+                                            <div class="col header-item-last-item-item">
+                                                <span class="giro-title">GÜNLÜK CİRO</span>
+                                            </div>
+                                            <div class="col header-item-last-item-item">
+                                                <span class="giro-money" id="giro-money">$2300</span>
+                                            </div>
+                                            <div class="col header-item-last-item-item">
+                                                <span class="circle-progress" id="circle-progress"></span>
+                                            </div>
+                                            <div class="col">
+                                                <span class="average" id="progress-value"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col space"></div>
+                    <div class="col">
+                        <div class="wrap">
+                            <div class="lg-9-12 md-8-12 sm-7-12 col xl-10-12">
+                                <div class="lg-auto lg-gutter-16 md-auto lg-gutter-16 sm-auto sm-gutter-16 wrap xl-auto xl-gutter-16">
+                                    <div class="col menu-item-item" id="1">
+                                        <button class="left-menu-item left-menu-item-active">BİLGİLER</button>
+                                    </div>
+                                    <div class="col menu-item-item" id="2">
+                                        <button class="left-menu-item">MÜŞTERİLER</button>
+                                    </div>
+                                    <div class="col menu-item-item" id="3">
+                                        <button class="left-menu-item">SERVİS BÖLGELERİ</button>
+                                    </div>
+                                    <div class="col menu-item-item" id="4">
+                                        <button class="left-menu-item">ÜRÜNLER</button>
+                                    </div>
+                                    <div class="col menu-item-item" id="5">
+                                        <button class="left-menu-item">DÖKÜMANLAR</button>
+                                    </div>
+                                    <div class="col menu-item-item" id="6">
+                                        <button class="left-menu-item">EĞİTİMLER</button>
+                                    </div>
+                                    <div class="col menu-item-item" id="7">
+                                        <button class="left-menu-item">PROFİL BİLGİLERİ</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="lg-3-12 md-4-12 sm-5-12 col xl-2-12">
+                                <div class="lg-auto lg-right lg-gutter-8 md-auto md-right md-gutter-8 sm-auto sm-right sm-gutter-8 wrap xl-auto xl-right xl-gutter-8">
+                                    <div class="col menu-item-item">
+                                        <button class="right-menu-item right-menu-item-active" id="on-button">AÇIK</button>
+                                    </div>
+                                    <div class="col menu-item-item">
+                                        <button class="right-menu-item" id="off-button">KAPALI</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col space"></div>
+                    <div class="col" data-group-id="1">
+                        <div class="lg-gutter-16 md-gutter-16 sm-gutter-16 sm-1 wrap xl-gutter-16">
+                            <div class="col lg-2-3 md-7-12 xl-3-4">
+                                <div class="lg-1 md-1 sm-1 wrap xl-1">
+                                    <div class="col section-1-first-item-item">
+                                        <div class="lg-1 md-1 sm-1 wrap xl-1">
+                                            <div class="col section-1-first-item-first-item-first-item">
+                                                <span class="section-1-main-label">Açık Olduğu Günler Ve Saatler</span>
+                                            </div>
+                                            <div class="col section-1-first-item-first-item-last-item">
+                                                <div class="lg-auto lg-center lg-gutter-16 lg-outside-24 md-auto md-center md-gutter-8 md-outside-16 sm-auto sm-center sm-gutter-16 sm-outside-24 wrap xl-auto xl-center xl-gutter-40 xl-outside-40">
+                                                    <div class="col section-1-first-item-first-item-last-item-item">
+                                                        <button class="weekday-button">Pazartesi</button>
+                                                        <i class="far fa-clock"></i>
+                                                        <span>08:00 - 22:00</span>
+                                                    </div>
+                                                    <div class="col section-1-first-item-first-item-last-item-item">
+                                                        <button class="weekday-button">Salı</button>
+                                                        <i class="far fa-clock"></i>
+                                                        <span>08:00 - 22:00</span>
+                                                    </div>
+                                                    <div class="col section-1-first-item-first-item-last-item-item">
+                                                        <button class="weekday-button">Çarşamba</button>
+                                                        <i class="far fa-clock"></i>
+                                                        <span>08:00 - 22:00</span>
+                                                    </div>
+                                                    <div class="col section-1-first-item-first-item-last-item-item">
+                                                        <button class="weekday-button">Perşembe</button>
+                                                        <i class="far fa-clock"></i>
+                                                        <span>08:00 - 22:00</span>
+                                                    </div>
+                                                    <div class="col section-1-first-item-first-item-last-item-item">
+                                                        <button class="weekday-button">Cuma</button>
+                                                        <i class="far fa-clock"></i>
+                                                        <span>08:00 - 22:00</span>
+                                                    </div>
+                                                    <div class="col section-1-first-item-first-item-last-item-item">
+                                                        <button class="weekend-button">Cumartesi</button>
+                                                        <i class="far fa-clock"></i>
+                                                        <span>08:00 - 22:00</span>
+                                                    </div>
+                                                    <div class="col section-1-first-item-first-item-last-item-item">
+                                                        <button class="weekend-button">Pazar</button>
+                                                        <i class="far fa-clock"></i>
+                                                        <span>08:00 - 22:00</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col section-1-first-item-item">
+                                        <div class="lg-1 md-1 sm-1 wrap xl-1">
+                                            <div class="col section-1-first-item-last-item-first-item">
+                                                <span class="section-1-main-label">Ödeme</span>
+                                            </div>
+                                            <div class="col section-1-first-item-last-item-last-item">
+                                                <div class="lg-gutter-16 lg-outside-24 md-flexbox md-gutter-8 md-outside-16 md-1 sm-gutter-16 sm-flexbox sm-outside-24 sm-1 wrap xl-gutter-24 xl-outside-40">
+                                                    <div class="col lg-3-4 xl-5-9">
+                                                        <div class="lg-gutter-8 md-gutter-8 sm-gutter-16 wrap xl-gutter-16">
+                                                            <div class="col lg-1-1 md-1-1 section-1-first-item-last-item-last-item-first-item-item sm-1-1 xl-1-1">
+                                                                <span class="section-1-sublabel">Ödeme Yöntemi</span>
+                                                                <label class="payment">
+                                                                    <input class="payment-input" name="payment" type="radio" value="cash">
+                                                                    <i class="far fa-circle payment-icon"></i>
+                                                                    Nakit
+                                                                </label>
+                                                                <label class="payment">
+                                                                    <input class="payment-input" name="payment" type="radio" value="credit-cart">
+                                                                    <i class="far fa-circle payment-icon"></i>
+                                                                    Kredi Kartı
+                                                                </label>
+                                                                <label class="payment">
+                                                                    <input class="payment-input" name="payment" type="radio" value="online-credit-cart">
+                                                                    <i class="far fa-circle payment-icon"></i>
+                                                                    Online Kredi Kartı
+                                                                </label>
+                                                            </div>
+                                                            <div class="col lg-1-2 md-1-2 section-1-first-item-last-item-last-item-first-item-item sm-1-2 xl-1-2">
+                                                                <span class="section-1-sublabel">Servis Mesafesi</span>
+                                                                <select class="section-1-select" name="service-distance">
+                                                                    <option value="2-kilometer">2 Kilometre</option>
+                                                                    <option value="3-kilometer">3 Kilometre</option>
+                                                                    <option value="4-kilometer">4 Kilometre</option>
+                                                                </select>
+                                                            </div>
+                                                            <div class="col lg-1-2 md-1-2 section-1-first-item-last-item-last-item-first-item-item sm-1-2 xl-1-2">
+                                                                <label class="section-1-sublabel">
+                                                                    Sabit Esnaf Numarası
+                                                                    <input class="fixed-number" name="fixed-number" placeholder="0212 444 55 55" type="tel">
+                                                                </label>
+                                                            </div>
+                                                            <div class="col lg-1-1 md-1-1 section-1-first-item-last-item-last-item-first-item-item sm-1-1 xl-1-1">
+                                                                <label class="section-1-sublabel">
+                                                                    IBAN Numarası
+                                                                    <label class="iban">
+                                                                        TR
+                                                                        <input class="iban-input" name="iban" type="text">
+                                                                    </label>
+                                                                </label>
+                                                            </div>
+                                                            <div class="col lg-1-1 md-1-1 section-1-first-item-last-item-last-item-first-item-item sm-1-1 xl-1-1">
+                                                                <button class="save-button">KAYDET</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col lg-1-4 md-first sm-first xl-4-9">
+                                                        <div class="lg-gutter-8 lg-1 md-gutter-8 md-1 sm-gutter-16 sm-1 wrap xl-gutter-16 xl-1">
+                                                            <div class="col section-1-first-item-last-item-last-item-last-item-item">
+                                                                <span class="section-1-sublabel">Ortalama Servis Süresi</span>
+                                                                <select class="section-1-select" name="average-service-time">
+                                                                    <option value="20-minute">20 Dakika</option>
+                                                                    <option value="30-minute">30 Dakika</option>
+                                                                    <option value="40-minute">40 Dakika</option>
+                                                                </select>
+                                                            </div>
+                                                            <div class="col section-1-first-item-last-item-last-item-last-item-item">
+                                                                <span class="section-1-sublabel">Minimum Sipariş Bedeli</span>
+                                                                <select class="section-1-select" name="minimum-price-of-order">
+                                                                    <option value="15-TL">15 TL</option>
+                                                                    <option value="25-TL">25 TL</option>
+                                                                    <option value="35-TL">35 TL</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col lg-1-3 md-5-12 xl-1-4">
+                                <div class="lg-1 md-1 sm-1 wrap xl-1">
+                                    <div class="col section-1-last-item-first-item">
+                                        <span class="section-1-main-label">Esnaf Bilgileri</span>
+                                    </div>
+                                    <div class="col section-1-last-item-last-item">
+                                        <div class="lg-gutter-8 lg-outside-16 lg-1 md-gutter-8 md-outside-16 md-1 sm-gutter-16 sm-outside-24 sm-1 wrap xl-gutter-16 xl-outside-24 xl-1">
+                                            <div class="col section-1-last-item-last-item-item">
+                                                <span class="craft-information-key">ADRES</span>
+                                                <span class="craft-information-value">Güzelköy Mahallesi 52. Sokak İzmir</span>
+                                                <img alt="map" class="map" src="image/profile-page/map.png">
+                                            </div>
+                                            <div class="col section-1-last-item-last-item-item">
+                                                <span class="craft-information-key">ÇALIŞMA GÜNLERİ</span>
+                                                <span class="craft-information-value">5</span>
+                                            </div>
+                                            <div class="col section-1-last-item-last-item-item">
+                                                <span class="craft-information-key">ÇALIŞMA SAATLERİ</span>
+                                                <span class="craft-information-value">09:00 - 22:00</span>
+                                            </div>
+                                            <div class="col section-1-last-item-last-item-item">
+                                                <span class="craft-information-key">SERVİS MESAFESİ</span>
+                                                <span class="craft-information-value">3 Kilometre</span>
+                                            </div>
+                                            <div class="col section-1-last-item-last-item-item">
+                                                <span class="craft-information-key">MİNİMUM SİPARİŞ BEDELİ</span>
+                                                <span class="craft-information-value">30 TL</span>
+                                            </div>
+                                            <div class="col section-1-last-item-last-item-item">
+                                                <span class="craft-information-key">SERVİS SÜRESİ</span>
+                                                <span class="craft-information-value">30 Dakika</span>
+                                            </div>
+                                            <div class="col section-1-last-item-last-item-item">
+                                                <span class="craft-information-key">POTANSİYEL MÜŞTERİ SAYISI</span>
+                                                <span class="craft-information-value">23</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col lg-hidden md-hidden sm-hidden xl-hidden" data-group-id="7">
+                        <div class="lg-gutter-16 lg-2 md-gutter-16 md-1 sm-gutter-16 sm-1 wrap xl-gutter-16 xl-2">
+                            <div class="col">
+                                <div class="lg-1 md-1 sm-1 wrap xl-1">
+                                    <div class="col section-7-first-item-first-item">Bilgiler</div>
+                                    <div class="col">
+                                        <div class="lg-center lg-1 md-center md-1 section-7-first-item-last-item-container sm-center sm-1 wrap xl-center xl-1">
+                                            <div class="col section-7-first-item-last-item-item">
+                                                <img alt="profile-image" class="profile-image" src="image/profile-page/avatar.jpg">
+                                            </div>
+                                            <div class="col section-7-first-item-last-item-item">
+                                                <span class="profile-information-key">Ad Soyad: </span>
+                                                <span class="profile-information-value">Elif Aslan</span>
+                                            </div>
+                                            <div class="col section-7-first-item-last-item-item">
+                                                <span class="profile-information-key">E-mail: </span>
+                                                <span class="profile-information-value">deneme@deneme.com </span>
+                                            </div>
+                                            <div class="col section-7-first-item-last-item-item">
+                                                <span class="profile-information-key">Telefon: </span>
+                                                <span class="profile-information-value">0541 278 99 88 </span>
+                                            </div>
+                                            <div class="col section-7-first-item-last-item-item">
+                                                <span class="profile-information-key">Rol: </span>
+                                                <span class="profile-information-value">Agent</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="lg-1 md-1 sm-1 wrap xl-1">
+                                    <div class="col section-7-last-item-first-item">Güncelle</div>
+                                    <div class="col">
+                                        <div class="lg-gutter-16 lg-outside-16 lg-2 md-gutter-16 md-outside-16 md-2 section-7-last-item-last-item-container sm-gutter-16 sm-outside-16 sm-1 wrap xl-gutter-16 xl-outside-16 xl-2">
+                                            <div class="col section-7-last-item-last-item-item">
+                                                <label class="text-field-label">
+                                                    Ad
+                                                    <br/>
+                                                    <input class="text-field" name="name" type="text">
+                                                </label>
+                                            </div>
+                                            <div class="col section-7-last-item-last-item-item">
+                                                <label class="text-field-label">
+                                                    Soyad
+                                                    <br/>
+                                                    <input class="text-field" name="surname" type="text">
+                                                </label>
+                                            </div>
+                                            <div class="col section-7-last-item-last-item-item">
+                                                <label class="text-field-label">
+                                                    E-mail
+                                                    <br/>
+                                                    <input class="text-field" name="e-mail" type="email">
+                                                </label>
+                                            </div>
+                                            <div class="col section-7-last-item-last-item-item">
+                                                <label class="text-field-label">
+                                                    Telefon
+                                                    <br/>
+                                                    <input class="text-field" name="phone" type="tel">
+                                                </label>
+                                            </div>
+                                            <div class="col section-7-last-item-last-item-item">
+                                                <label class="text-field-label">
+                                                    Fotoğraf
+                                                    <br/>
+                                                    <input class="text-field" name="photo" type="file">
+                                                </label>
+                                            </div>
+                                            <div class="col section-7-last-item-last-item-item">
+                                                <label class="text-field-label">
+                                                    Eski Şifre
+                                                    <br/>
+                                                    <input class="text-field" name="old-password" type="password">
+                                                </label>
+                                            </div>
+                                            <div class="col section-7-last-item-last-item-item">
+                                                <label class="text-field-label">
+                                                    Yeni Şifre
+                                                    <br/>
+                                                    <input class="text-field" name="new-password" type="password">
+                                                </label>
+                                            </div>
+                                            <div class="col section-7-last-item-last-item-item">
+                                                <label class="text-field-label">
+                                                    Yeni Şifre Tekrar
+                                                    <br/>
+                                                    <input class="text-field" name="new-password-repeat" type="password">
+                                                </label>
+                                            </div>
+                                            <div class="col section-7-last-item-last-item-item"></div>
+                                            <div class="col section-7-last-item-last-item-item">
+                                                <button class="update-button">GÜNCELLE</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col space"></div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

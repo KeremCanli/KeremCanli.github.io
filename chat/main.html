@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+        <link href="css/all.min.css" rel="stylesheet">
+        <link href="css/flexiblegs-css.min.css" rel="stylesheet">
+        <link href="css/font.css" rel="stylesheet">
+        <link href="css/main.css" rel="stylesheet">
+        <link href="css/modal.css" rel="stylesheet">
+        <link href="css/normalize.min.css" rel="stylesheet">
+        <link href="css/side-menu.css" rel="stylesheet">
+        <meta charset="UTF-8">
+        <meta content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, width=device-width" name="viewport">
+        <script src="js/jquery-3.4.1.min.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/menu.js"></script>
+        <script src="js/modal.js"></script>
+        <script src="js/sweetalert2@8.js"></script>
+        <script src="js/deneme2.js"></script>
+        <title></title>
+    </head>
+    <body>
+        <div class="lg-table md-table sm-table wrap xl-table">
+            <div class="col lg-hidden md-hidden side-menu sm-hidden">
+                <div class="lg-1 md-1 side-menu-container sm-1 wrap xl-1">
+                    <div class="col side-menu-item">
+                        <a class="link" href="main.html">
+                            <img alt="logo" class="logo" src="image/menu/logo.png">
+                        </a>
+                    </div>
+                    <div class="col side-menu-item">
+                        <a class="link" href="daily.html">
+                            <i class="fas fa-th icon"></i>
+                        </a>
+                    </div>
+                    <div class="col side-menu-item">
+                        <a class="link" href="main.html">
+                            <i class="fas fa-comments icon icon-active"></i>
+                        </a>
+                    </div>
+                    <div class="col side-menu-item">
+                        <a class="link" href="profile.html">
+                            <i class="fas fa-user-circle icon"></i>
+                        </a>
+                    </div>
+                    <div class="col side-menu-item">
+                        <a class="link" href="help.html">
+                            <i class="fas fa-globe-asia icon"></i>
+                        </a>
+                    </div>
+                    <div class="col lg-not-hidden side-menu-item xl-hidden">
+                        <button class="quit-button">
+                            <i class="fas fa-power-off quit-button-icon"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="lg-gutter-16 lg-outside-16 md-gutter-16 md-outside-16 sm-gutter-0 sm-outside-40 sm-1 wrap xl-gutter-24 xl-outside-24">
+                    <div class="col lg-1-1 md-1-1 space xl-1-1"></div>
+                    <div class="col lg-1-1 md-1-1 xl-1-1">
+                        <div class="header-container lg-middle lg-outside-16 lg-table md-middle md-outside-16 md-table sm-middle sm-outside-16 sm-table wrap xl-middle xl-outside-24 xl-table">
+                            <div class="col header-first-item">
+                                <img alt="company-logo" class="company-logo" src="image/main-page/company-logo.png">
+                            </div>
+                            <div class="col">
+                                <div class="lg-auto lg-gutter-16 lg-middle lg-outside-16 md-auto md-gutter-16 md-middle md-outside-16 sm-auto sm-gutter-8 sm-middle sm-outside-8 wrap xl-auto xl-gutter-16 xl-middle xl-outside-16">
+                                    <div class="col header-second-item-item">
+                                        <div class="lg-auto lg-gutter-16 lg-middle md-auto md-gutter-16 md-middle sm-auto sm-gutter-8 sm-middle wrap xl-auto xl-gutter-8 xl-middle">
+                                            <div class="col header-second-item-item-item">
+                                                <span class="company-name">Boyner</span>
+                                            </div>
+                                            <div class="col header-second-item-item-item">
+                                                <button class="settings">
+                                                    <i class="fas fa-cog settings-icon"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col header-second-item-item">
+                                        <div class="lg-auto lg-gutter-16 md-auto md-gutter-16 sm-auto sm-gutter-8 wrap xl-auto xl-gutter-16">
+                                            <div class="col header-second-item-item-item">
+                                                <button class="status">
+                                                    <i class="fas fa-circle status-icon status-icon-active"></i>
+                                                    <span class="status-text status-text-active">Çevrimiçi</span>
+                                                </button>
+                                            </div>
+                                            <div class="col header-second-item-item-item">
+                                                <button class="status status-second">
+                                                    <i class="fas fa-coffee status-icon"></i>
+                                                    <span class="status-text">Mola</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col header-second-item-item md-hidden sm-hidden">
+                                        <div class="lg-auto lg-gutter-24 wrap xl-auto xl-gutter-16">
+                                            <div class="col header-second-item-last-item-item">
+                                                <span class="information-type">GÖRÜŞME SAYISI</span>
+                                                <span class="information-value">45</span>
+                                            </div>
+                                            <div class="col header-second-item-last-item-item">
+                                                <span class="information-type">GÖRÜŞME SÜRESİ</span>
+                                                <span class="information-value">
+                                                    1
+                                                    <span class="information-symbol">sa</span>
+                                                </span>
+                                                <span class="information-value">
+                                                    3
+                                                    <span class="information-symbol">dk</span>
+                                                </span>
+                                            </div>
+                                            <div class="col header-second-item-last-item-item">
+                                                <span class="information-type">GÜNLÜK CİRO</span>
+                                                <span class="information-value">
+                                                    189,00
+                                                    <span class="information-symbol">&#x20BA;</span>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col header-last-item">
+                                <button class="exit-button">
+                                    <i class="exit-button-icon fas fa-power-off"></i>
+                                </button>
+                                <button class="hamburger-menu-open">
+                                    <i class="fas fa-bars hamburger-menu-open-icon"></i>
+                                </button>
+                                <button class="hamburger-menu-close">
+                                    <i class="fas fa-times hamburger-menu-close-icon"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col lg-1-1 md-1-1 space xl-1-1"></div>
+                    <div class="col lg-5-12 md-5-12 section-1 xl-3-12">
+                        <div class="lg-outside-24 lg-1 md-outside-24 md-1 section-1-container sm-outside-16 sm-1 wrap xl-outside-24 xl-1">
+                            <div class="col section-1-item"></div>
+                            <div class="col section-1-item">
+                                <div class="lg-gutter-8 lg-2 md-gutter-8 md-2 section-1-second-item-container sm-gutter-8 sm-2 wrap xl-gutter-8 xl-2">
+                                    <div class="col section-1-second-item-item">
+                                        <div class="conversation conversation-active conversation-first">
+                                            <span class="conversation-number">0</span>
+                                            <span class="conversation-type">Gelen Mesajlar</span>
+                                        </div>
+                                    </div>
+                                    <div class="col section-1-second-item-item">
+                                        <div class="conversation conversation-second">
+                                            <span class="conversation-number">0</span>
+                                            <span class="conversation-type">Sonlandırılan</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col section-1-item"></div>
+                            <div class="col section-1-item">
+                                <div class="lg-gutter-8 md-gutter-8 section-1-fourth-item-container sm-gutter-8 wrap xl-gutter-8">
+                                    <div class="col lg-3-12 md-3-12 section-1-fourth-item-item sm-3-12 xl-3-12">
+                                        <button class="filter">
+                                            <i class="fas fa-filter filter-icon"></i>
+                                        </button>
+                                    </div>
+                                    <div class="col lg-9-12 md-9-12 section-1-fourth-item-item sm-9-12 xl-9-12">
+                                        <div class="lg-outside-16 md-outside-16 section-1-fourth-item-last-item-container sm-outside-16 wrap xl-outside-16">
+                                            <div class="col lg-10-12 md-10-12 section-1-fourth-item-last-item-first-item sm-10-12 xl-10-12">
+                                                <input class="search-input" placeholder="Arama yap..." type="text">
+                                            </div>
+                                            <div class="col lg-2-12 md-2-12 section-1-fourth-item-last-item-last-item sm-2-12 xl-2-12">
+                                                <button class="search">
+                                                    <i class="fas fa-search search-icon"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col section-1-item"></div>
+                            <div class="col section-1-item">
+                                <div class="lg-1 md-1 section-1-sixth-item-container sm-1 wrap xl-1">
+                                    <div class="col section-1-sixth-item-item">
+                                        <div class="lg-middle lg-outside-16 lg-table md-middle md-outside-16 md-table section-1-sixth-item-item-container sm-middle sm-outside-16 sm-table wrap xl-middle xl-outside-16 xl-table">
+                                            <div class="col section-1-sixth-item-item-first-item">
+                                                <img alt="avatar-1" class="avatar" src="image/main-page/avatar-1.png">
+                                            </div>
+                                            <div class="col section-1-sixth-item-item-second-item">
+                                                <span class="user-name-surname">Elif Aslan</span>
+                                                <span class="user-status">
+                                                    <i class="fas fa-circle user-status-icon"></i>
+                                                    online
+                                                </span>
+                                                <span class="user-new-message-count">52</span>
+                                                <span class="active-agent-name">Hasan Hüseyin</span>
+                                            </div>
+                                            <div class="col section-1-sixth-item-item-last-item" style="border-right: 4px solid #37b349;">
+                                                <i class="fab fa-facebook-messenger social-media-icon facebook-messenger-icon"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--<div class="col section-1-sixth-item-item">
+                                        <div class="lg-middle lg-outside-16 lg-table md-middle md-outside-16 md-table section-1-sixth-item-item-container sm-middle sm-outside-16 sm-table wrap xl-middle xl-outside-16 xl-table">
+                                            <div class="col section-1-sixth-item-item-first-item">
+                                                <img alt="avatar-2" class="avatar" src="./image/main-page/avatar-2.png">
+                                            </div>
+                                            <div class="col section-1-sixth-item-item-second-item">
+                                                <p class="user-name-surname">Deniz Gidik</p>
+                                                <p class="user-status">
+                                                    <i class="fas fa-circle user-status-icon"></i>
+                                                    online
+                                                </p>
+                                            </div>
+                                            <div class="col section-1-sixth-item-item-last-item">
+                                                <i class="fab fa-whatsapp social-media-icon whatsapp-icon"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col section-1-sixth-item-item">
+                                        <div class="lg-middle lg-outside-16 lg-table md-middle md-outside-16 md-table section-1-sixth-item-item-container sm-middle sm-outside-16 sm-table wrap xl-middle xl-outside-16 xl-table">
+                                            <div class="col section-1-sixth-item-item-first-item">
+                                                <img alt="avatar-3" class="avatar" src="./image/main-page/avatar-3.png">
+                                            </div>
+                                            <div class="col section-1-sixth-item-item-second-item">
+                                                <p class="user-name-surname">Hülya Yıldız</p>
+                                                <p class="user-status">
+                                                    <i class="fas fa-circle user-status-icon"></i>
+                                                    online
+                                                </p>
+                                            </div>
+                                            <div class="col section-1-sixth-item-item-last-item" style="border-right: 4px solid #00baff;">
+                                                <i class="fab fa-facebook-messenger social-media-icon facebook-messenger-icon"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col section-1-sixth-item-item">
+                                        <div class="lg-middle lg-outside-16 lg-table md-middle md-outside-16 md-table section-1-sixth-item-item-container sm-middle sm-outside-16 sm-table wrap xl-middle xl-outside-16 xl-table">
+                                            <div class="col section-1-sixth-item-item-first-item">
+                                                <img alt="avatar-4" class="avatar" src="./image/main-page/avatar-4.png">
+                                            </div>
+                                            <div class="col section-1-sixth-item-item-second-item">
+                                                <p class="user-name-surname">Ercan Balcı</p>
+                                                <p class="user-status">
+                                                    <i class="fas fa-circle user-status-icon"></i>
+                                                    online
+                                                </p>
+                                            </div>
+                                            <div class="col section-1-sixth-item-item-last-item" style="border-right: 4px solid #f33a3f;">
+                                                <i class="fab fa-whatsapp social-media-icon whatsapp-icon"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col section-1-sixth-item-item">
+                                        <div class="lg-middle lg-outside-16 lg-table md-middle md-outside-16 md-table section-1-sixth-item-item-container sm-middle sm-outside-16 sm-table wrap xl-middle xl-outside-16 xl-table">
+                                            <div class="col section-1-sixth-item-item-first-item">
+                                                <img alt="avatar-5" class="avatar" src="./image/main-page/avatar-5.png">
+                                            </div>
+                                            <div class="col section-1-sixth-item-item-second-item">
+                                                <p class="user-name-surname">Fatih Çamak</p>
+                                                <p class="user-status">
+                                                    <i class="fas fa-circle user-status-icon"></i>
+                                                    online
+                                                </p>
+                                            </div>
+                                            <div class="col section-1-sixth-item-item-last-item" style="border-right: 4px solid #37b349;">
+                                                <i class="fab fa-whatsapp social-media-icon whatsapp-icon"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col section-1-sixth-item-item">
+                                        <div class="lg-middle lg-outside-16 lg-table md-middle md-outside-16 md-table section-1-sixth-item-item-container sm-middle sm-outside-16 sm-table wrap xl-middle xl-outside-16 xl-table">
+                                            <div class="col section-1-sixth-item-item-first-item">
+                                                <img alt="avatar-6" class="avatar" src="./image/main-page/avatar-6.png">
+                                            </div>
+                                            <div class="col section-1-sixth-item-item-second-item">
+                                                <p class="user-name-surname">Derya Haspa</p>
+                                                <p class="user-status">
+                                                    <i class="fas fa-circle user-status-icon"></i>
+                                                    online
+                                                </p>
+                                            </div>
+                                            <div class="col section-1-sixth-item-item-last-item" style="border-right: 4px solid #37b349;">
+                                                <i class="fab fa-whatsapp social-media-icon whatsapp-icon"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col section-1-sixth-item-item">
+                                        <div class="lg-middle lg-outside-16 lg-table md-middle md-outside-16 md-table section-1-sixth-item-item-container sm-middle sm-outside-16 sm-table wrap xl-middle xl-outside-16 xl-table">
+                                            <div class="col section-1-sixth-item-item-first-item">
+                                                <img alt="avatar-7" class="avatar" src="./image/main-page/avatar-7.png">
+                                            </div>
+                                            <div class="col section-1-sixth-item-item-second-item">
+                                                <p class="user-name-surname">Seda Türker</p>
+                                                <p class="user-status">
+                                                    <i class="fas fa-circle user-status-icon"></i>
+                                                    online
+                                                </p>
+                                            </div>
+                                            <div class="col section-1-sixth-item-item-last-item" style="border-right: 4px solid #37b349;">
+                                                <i class="fab fa-facebook-messenger social-media-icon facebook-messenger-icon"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col section-1-sixth-item-item">
+                                        <div class="lg-middle lg-outside-16 lg-table md-middle md-outside-16 md-table section-1-sixth-item-item-container sm-middle sm-outside-16 sm-table wrap xl-middle xl-outside-16 xl-table">
+                                            <div class="col section-1-sixth-item-item-first-item">
+                                                <img alt="avatar-1" class="avatar" src="./image/main-page/avatar-1.png">
+                                            </div>
+                                            <div class="col section-1-sixth-item-item-second-item">
+                                                <p class="user-name-surname">Saliha Genc</p>
+                                                <p class="user-status">
+                                                    <i class="fas fa-circle user-status-icon"></i>
+                                                    online
+                                                </p>
+                                            </div>
+                                            <div class="col section-1-sixth-item-item-last-item" style="border-right: 4px solid #272421;">
+                                                <i class="fab fa-whatsapp social-media-icon whatsapp-icon"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col section-1-sixth-item-item">
+                                        <div class="lg-middle lg-outside-16 lg-table md-middle md-outside-16 md-table section-1-sixth-item-item-container sm-middle sm-outside-16 sm-table wrap xl-middle xl-outside-16 xl-table">
+                                            <div class="col section-1-sixth-item-item-first-item">
+                                                <img alt="avatar-2" class="avatar" src="./image/main-page/avatar-2.png">
+                                            </div>
+                                            <div class="col section-1-sixth-item-item-second-item">
+                                                <p class="user-name-surname">Fadime Gelik</p>
+                                                <p class="user-status">
+                                                    <i class="fas fa-circle user-status-icon"></i>
+                                                    online
+                                                </p>
+                                            </div>
+                                            <div class="col section-1-sixth-item-item-last-item" style="border-right: 4px solid #37b349;">
+                                                <i class="fab fa-whatsapp social-media-icon whatsapp-icon"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col section-1-sixth-item-item">
+                                        <div class="lg-middle lg-outside-16 lg-table md-middle md-outside-16 md-table section-1-sixth-item-item-container sm-middle sm-outside-16 sm-table wrap xl-middle xl-outside-16 xl-table">
+                                            <div class="col section-1-sixth-item-item-first-item">
+                                                <img alt="avatar-3" class="avatar" src="./image/main-page/avatar-3.png">
+                                            </div>
+                                            <div class="col section-1-sixth-item-item-second-item">
+                                                <p class="user-name-surname">Deniz Gidik</p>
+                                                <p class="user-status">
+                                                    <i class="fas fa-circle user-status-icon"></i>
+                                                    online
+                                                </p>
+                                            </div>
+                                            <div class="col section-1-sixth-item-item-last-item" style="border-right: 4px solid #37b349;">
+                                                <i class="fab fa-whatsapp social-media-icon whatsapp-icon"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col section-1-sixth-item-item">
+                                        <div class="lg-middle lg-outside-16 lg-table md-middle md-outside-16 md-table section-1-sixth-item-item-container sm-middle sm-outside-16 sm-table wrap xl-middle xl-outside-16 xl-table">
+                                            <div class="col section-1-sixth-item-item-first-item">
+                                                <img alt="avatar-4" class="avatar" src="./image/main-page/avatar-4.png">
+                                            </div>
+                                            <div class="col section-1-sixth-item-item-second-item">
+                                                <p class="user-name-surname">Kemal Bilir</p>
+                                                <p class="user-status">
+                                                    <i class="fas fa-circle user-status-icon"></i>
+                                                    online
+                                                </p>
+                                            </div>
+                                            <div class="col section-1-sixth-item-item-last-item" style="border-right: 4px solid #37b349;">
+                                                <i class="fab fa-instagram social-media-icon instagram-icon"></i>
+                                            </div>
+                                        </div>
+                                    </div>-->
+                                </div>
+                            </div>
+                            <div class="col section-1-item"></div>
+                        </div>
+                    </div>
+                    <div class="col lg-hidden lg-5-12 md-hidden md-5-12 section-4 sm-hidden xl-hidden xl-3-12">
+                        <div class="lg-outside-24 lg-1 md-outside-16 md-1 section-4-container sm-outside-40 sm-1 wrap xl-outside-40 xl-1">
+                            <div class="col section-4-first-item">
+                                <div class="lg-middle lg-table md-middle md-table sm-middle sm-table wrap xl-middle xl-table">
+                                    <div class="col">
+                                        <h4 class="title">SONLANDIR</h4>
+                                    </div>
+                                    <div class="col section-4-first-item-last-item">
+                                        <button class="cancel-button">
+                                            <i class="cancel-button-icon fas fa-times"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col section-4-second-item">
+                                <span class="termination-title">Lütfen sonlandırma durumunu belirtiniz.</span>
+                            </div>
+                            <div class="col">
+                                <div class="lg-1 md-1 sm-1 wrap xl-1">
+                                    <div class="col section-4-last-item-item">
+                                        <div class="lg-gutter-8 lg-middle lg-outside-8 lg-table md-gutter-8 md-middle md-outside-8 md-table section-4-last-item-item-container sm-gutter-8 sm-middle sm-outside-16 sm-table wrap xl-gutter-8 xl-middle xl-outside-16 xl-table">
+                                            <div class="col section-4-last-item-item-first-item">
+                                                <label class="termination-description" for="one">Kullanıcıyı bir zaman dahilinde beklet.</label>
+                                            </div>
+                                            <div class="col section-4-last-item-item-last-item">
+                                                <input class="termination-input" id="one" name="termination" type="radio" value="one">
+                                                <label class="far termination-icon" for="one"></label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col section-4-last-item-item">
+                                        <div class="lg-gutter-8 lg-middle lg-outside-8 lg-table md-gutter-8 md-middle md-outside-8 md-table section-4-last-item-item-container sm-gutter-8 sm-middle sm-outside-16 sm-table wrap xl-gutter-8 xl-middle xl-outside-16 xl-table">
+                                            <div class="col section-4-last-item-item-first-item">
+                                                <label class="termination-description" for="two">Müşteri ödeme yapmadı.</label>
+                                            </div>
+                                            <div class="col section-4-last-item-item-last-item">
+                                                <input class="termination-input" id="two" name="termination" type="radio" value="two">
+                                                <label class="far termination-icon" for="two"></label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col section-4-last-item-item">
+                                        <div class="lg-gutter-8 lg-middle lg-outside-8 lg-table md-gutter-8 md-middle md-outside-8 md-table section-4-last-item-item-container sm-gutter-8 sm-middle sm-outside-16 sm-table wrap xl-gutter-8 xl-middle xl-outside-16 xl-table">
+                                            <div class="col section-4-last-item-item-first-item">
+                                                <label class="termination-description" for="three">Görüşme tamamlandı.</label>
+                                            </div>
+                                            <div class="col section-4-last-item-item-last-item">
+                                                <input class="termination-input" id="three" name="termination" type="radio" value="three">
+                                                <label class="far termination-icon" for="three"></label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col section-4-last-item-item">
+                                        <div class="lg-gutter-8 lg-middle lg-outside-8 lg-table md-gutter-8 md-middle md-outside-8 md-table section-4-last-item-item-container sm-gutter-8 sm-middle sm-outside-16 sm-table wrap xl-gutter-8 xl-middle xl-outside-16 xl-table">
+                                            <div class="col section-4-last-item-item-first-item">
+                                                <label class="termination-description" for="four">Ödeme yönteminde problem yaşanıyor.</label>
+                                            </div>
+                                            <div class="col section-4-last-item-item-last-item">
+                                                <input class="termination-input" id="four" name="termination" type="radio" value="four">
+                                                <label class="far termination-icon" for="four"></label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col section-4-last-item-fiveth-item">
+                                        <div class="lg-gutter-8 lg-middle lg-table md-gutter-8 md-middle md-table wrap sm-gutter-16 sm-middle sm-table xl-gutter-16 xl-middle xl-table">
+                                            <div class="col section-4-last-item-fiveth-item-first-item">
+                                                <input class="reminders-input" id="five" name="reminders" type="checkbox">
+                                                <label class="far reminders-icon" for="five"></label>
+                                            </div>
+                                            <div class="col">
+                                                <label class="reminders-description" for="five">Bu Randevuyu Hatırlatıcıya Ekle</label>
+                                            </div>
+                                            <div class="col section-4-last-item-fiveth-item-last-item">
+                                                <button class="reminders-button">
+                                                    <i class="far fa-bell reminders-button-icon"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <button class="termination-button">KONUŞMAYI SONLANDIR</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col lg-hidden md-hidden section-2 sm-hidden xl-hidden xl-3-12">
+                        <div class="section-2-container wrap xl-outside-24 xl-1">
+                            <div class="col section-2-item">
+                                <div class="wrap xl-auto xl-center xl-gutter-40 xl-middle">
+                                    <div class="col section-2-first-item-first-item">
+                                        <img alt="avatar-1" class="profile-avatar" src="image/main-page/avatar-1.png">
+                                    </div>
+                                    <div class="col section-2-first-item-last-item">
+                                        <div class="wrap xl-gutter-40 xl-middle">
+                                            <div class="col xl-2-3">
+                                                <span class="profile-user-name-surname">Abdurrahman Aslan</span>
+                                                <span class="user-phone">+90 545 555 55 55</span>
+                                            </div>
+                                            <div class="col xl-1-3">
+                                                <i class="fas fa-phone-alt phone-icon"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col section-2-item">
+                                <div class="wrap xl-auto xl-center xl-gutter-16">
+                                    <div class="col section-2-second-item-item">
+                                        <span class="order-information-value">13</span>
+                                        <span class="order-information-type">Sipariş</span>
+                                    </div>
+                                    <div class="col section-2-second-item-item">
+                                        <span class="order-information-value">27,00&#x20BA;</span>
+                                        <span class="order-information-type">Sepet Ortalaması</span>
+                                    </div>
+                                    <div class="col section-2-second-item-item">
+                                        <span class="order-information-value">211,00₺</span>
+                                        <span class="order-information-type">Harcama Toplamı</span>
+                                    </div>
+                                    <div class="col section-2-second-item-item">
+                                        <span class="order-information-value">Çok Sık</span>
+                                        <span class="order-information-type">İletişim Sıklığı</span>
+                                    </div>
+                                    <div class="col section-2-second-item-item">
+                                        <span class="order-information-value">27.02.19</span>
+                                        <span class="order-information-type">Son İletişim</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col section-2-item">
+                                <div class="wrap xl-auto xl-gutter-16">
+                                    <div class="col section-2-third-item-item">
+                                        <button class="operation operation-group">GRUPLA</button>
+                                    </div>
+                                    <div class="col section-2-third-item-item">
+                                        <button class="operation operation-transfer">AKTAR</button>
+                                    </div>
+                                    <div class="col section-2-third-item-item">
+                                        <button class="operation operation-deneme">DENEME</button>
+                                    </div>
+                                </div>
+                                <div class="custom-swal2-container-1 custom-swal2-container-2 swal2-center swal2-fade swal2-shown">
+                                    <div aria-describedby="swal2-content" aria-labelledby="swal2-title" aria-live="" aria-modal="true" class="custom-swal2-modal swal2-modal swal2-popup swal2-show" role="dialog" tabindex="-1">
+                                        <div class="swal2-header">
+                                            <h2 class="custom-swal2-title swal2-title" id="swal2-title">Header</h2>
+                                            <button aria-label="Close this dialog" class="custom-swal2-close swal2-close" type="button">×</button>
+                                        </div>
+                                        <div class="swal2-content">
+                                            <div id="swal2-content" style="display: none;"></div>
+                                            <label for="swal2-input">
+                                                <span class="swal2-label">Label 1</span>
+                                                <input class="swal2-input" id="swal2-input" type="text">
+                                            </label>
+                                            <label for="swal2-textarea">
+                                                <span class="swal2-label">Label 2</span>
+                                                <textarea class="custom-swal2-textarea swal2-textarea" id="swal2-textarea"></textarea>
+                                            </label>
+                                            <label for="swal2-select">
+                                                <span class="swal2-label">Label 3</span>
+                                                <select class="custom-swal2-select swal2-select" id="swal2-select">
+                                                    <option disabled>Option 0</option>
+                                                    <option value="1">Option 1</option>
+                                                    <option value="2">Option 2</option>
+                                                </select>
+                                            </label>
+                                        </div>
+                                        <div class="swal2-actions">
+                                            <button aria-label="" class="custom-swal2-confirm swal2-confirm swal2-styled" type="button">Tamam</button>
+                                            <button aria-label="" class="custom-swal2-cancel swal2-cancel swal2-styled" type="button">İptal</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col section-2-item">
+                                <div class="wrap xl-auto xl-gutter-8">
+                                    <div class="col xl-1-1">
+                                        <h4 class="title">Etiketler</h4>
+                                    </div>
+                                    <div class="col section-2-fourth-item-item">
+                                        <button class="add">
+                                            <i class="fas fa-plus add-icon"></i>
+                                        </button>
+                                    </div>
+                                    <div class="col section-2-fourth-item-item">
+                                        <button class="tag">
+                                            #kadın
+                                            <i class="fas fa-times tag-icon"></i>
+                                        </button>
+                                    </div>
+                                    <div class="col section-2-fourth-item-item">
+                                        <button class="tag">
+                                            #kadın
+                                            <i class="fas fa-times tag-icon"></i>
+                                        </button>
+                                    </div>
+                                    <div class="col section-2-fourth-item-item">
+                                        <button class="tag">
+                                            #kadın
+                                            <i class="fas fa-times tag-icon"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col section-2-item">
+                                <div class="wrap xl-auto xl-gutter-8">
+                                    <div class="col xl-1-1">
+                                        <h4 class="title">Kayıtlı Olduğu Gruplar</h4>
+                                    </div>
+                                    <div class="col section-2-fiveth-item-item">
+                                        <button class="group">
+                                            pantolon
+                                            <i class="fas fa-times group-icon"></i>
+                                        </button>
+                                    </div>
+                                    <div class="col section-2-fiveth-item-item">
+                                        <button class="group">
+                                            etek
+                                            <i class="fas fa-times group-icon"></i>
+                                        </button>
+                                    </div>
+                                    <div class="col section-2-fiveth-item-item">
+                                        <button class="group">
+                                            çorap
+                                            <i class="fas fa-times group-icon"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col section-2-item">
+                                <div class="wrap xl-1">
+                                    <div class="col section-2-last-item-item">
+                                        <input class="text-field" name="name-surname" placeholder="Adı Soyadı" type="text">
+                                    </div>
+                                    <div class="col section-2-last-item-item">
+                                        <input class="text-field" name="e-mail" placeholder="E-Mail" type="email">
+                                    </div>
+                                    <div class="col section-2-last-item-item">
+                                        <input class="text-field" name="phone" placeholder="Telefon" type="tel">
+                                    </div>
+                                    <div class="col section-2-last-item-item">
+                                        <input class="text-field" name="birthday" placeholder="Doğum Tarihi" type="text">
+                                    </div>
+                                    <div class="col section-2-last-item-item">
+                                        <textarea class="address-field" name="address" placeholder="Adres"></textarea>
+                                    </div>
+                                    <div class="col section-2-last-item-item">
+                                        <button class="save">KAYDET</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--<div class="col lg-hidden lg-7-12 md-hidden md-7-12 section-3 sm-hidden xl-hidden xl-6-12">-->
+                    <div class="col lg-7-12 md-7-12 section-3 xl-6-12">
+                        <div class="lg-outside-24 lg-1 md-outside-24 md-1 section-3-container sm-outside-16 sm-1 wrap xl-outside-24 xl-1">
+                            <div class="col section-3-item">
+                                <div class="lg-gutter-8 lg-table md-gutter-8 md-table section-3-first-item-container sm-gutter-16 sm-table wrap xl-gutter-16 xl-table">
+                                    <div class="col lg-hidden md-hidden section-3-first-item-item xl-hidden">
+                                        <button class="back-button conversation-button">
+                                            <i class="conversation-button-icon fas fa-arrow-left"></i>
+                                        </button>
+                                    </div>
+                                    <div class="col"></div>
+                                    <div class="col section-3-first-item-item">
+                                        <button class="conversation-button">
+                                            <i class="conversation-button-icon fas fa-history"></i>
+                                        </button>
+                                    </div>
+                                    <div class="col section-3-first-item-third-item">
+                                        <button class="conversation-button conversation-end-button">
+                                            <i class="conversation-button-icon fas fa-comment-slash"></i>
+                                        </button>
+                                    </div>
+                                    <div class="col section-3-first-item-last-item">
+                                        <button class="conversation-button conversation-ban-button">
+                                            <i class="conversation-button-icon fas fa-user-slash"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col section-3-item">
+                                <div class="lg-1 md-1 section-3-second-item-container sm-1 wrap xl-1">
+                                    <div class="col">
+                                        <div class="message-header-customer">
+                                            <i class="fas fa-circle message-customer-status-icon"></i>
+                                            <span class="message-from">Elif Aslan</span>
+                                            <span class="message-time">23:10, Bugün</span>
+                                        </div>
+                                        <div class="talking-balloon talking-balloon-first-message-customer">Merhaba bir ürün sipariş vermek istiyorum.</div>
+                                        <div class="talking-balloon talking-balloon-second-message-customer">Yardımcı olur musunuz?</div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="message-header-customer">
+                                            <i class="fas fa-circle message-customer-status-icon"></i>
+                                            <span class="message-from">Elif Aslan</span>
+                                            <span class="message-time">23:12, Bugün</span>
+                                        </div>
+                                        <div class="talking-balloon talking-balloon-first-message-customer">Kırmızı elbise istiyorum.</div>
+                                        <div class="talking-balloon talking-balloon-second-message-customer">32 beden</div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="message-header-agent">
+                                            <span class="message-time">23:12, Bugün</span>
+                                            <span class="message-from">Agent</span>
+                                            <i class="fas fa-circle message-agent-status-icon"></i>
+                                        </div>
+                                        <div class="talking-balloon talking-balloon-first-message-agent">Merhaba Elif Hanım, kontrolü hemen sağlıyorum.</div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="message-header-agent">
+                                            <span class="message-time">23:15, Bugün</span>
+                                            <span class="message-from">Agent</span>
+                                            <i class="fas fa-circle message-agent-status-icon"></i>
+                                        </div>
+                                        <div class="talking-balloon talking-balloon-first-message-agent">Elif Hanım, gerekli kontrolü gerçekleştirdim.</div>
+                                        <div class="talking-balloon talking-balloon-second-message-agent">Elif Hanım, gerekli kontrolü gerçekleştirdim.</div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="message-header-customer">
+                                            <i class="fas fa-circle message-customer-status-icon"></i>
+                                            <span class="message-from">Elif Aslan</span>
+                                            <span class="message-time">23:50, Bugün</span>
+                                        </div>
+                                        <div class="talking-balloon talking-balloon-first-message-customer">
+                                            <img class="image-in-message" src="./image/login-page/background.png">
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="message-header-agent">
+                                            <i class="fas fa-circle message-agent-status-icon"></i>
+                                            <span class="message-time">23:53, Bugün</span>
+                                            <span class="message-from">Agent</span>
+                                        </div>
+                                        <div class="talking-balloon talking-balloon-first-message-agent">
+                                            <div class="lg-gutter-16 lg-middle md-gutter-16 md-middle sm-gutter-16 sm-middle wrap xl-gutter-16 xl-middle">
+                                                <div class="col lg-4-12 md-4-12 sm-4-12 xl-4-12">
+                                                    <img class="image-in-message-with-link-preview" src="./image/login-page/company-logo.png">
+                                                </div>
+                                                <div class="col lg-8-12 md-8-12 sm-8-12 xl-8-12">
+                                                    <div class="lg-1 md-1 sm-1 wrap xl-1">
+                                                        <div class="col anchor-parent-in-message-with-link-preview">
+                                                            <a href="#">Kırmızı Tunik</a>
+                                                        </div>
+                                                        <div class="col text-in-message-with-link-preview">Deneme Deneme Deneme Deneme Deneme Deneme Deneme Deneme Deneme Deneme Deneme Deneme Deneme Deneme Deneme Deneme Deneme</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col section-3-item"></div>
+                            <div class="col section-3-item">
+                                <div class="section-3-fourth-item-container wrap">
+                                    <div class="col lg-4-12 md-4-12 section-3-fourth-item-item sm-4-12 xl-3-12">
+                                        <button class="ready-messsage">HAZIR MESAJ</button>
+                                    </div>
+                                    <div class="col lg-8-12 md-8-12 section-3-fourth-item-item sm-8-12 xl-9-12">
+                                        <select class="ready-message-field">
+                                            <option>/Merhaba, size nasıl yardımcı olabilirim?</option>
+                                            <option>/Sipariş mi vermek istiyorsunuz?</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col section-3-item"></div>
+                            <div class="col section-3-item">
+                                <div class="section-3-sixth-item-container wrap">
+                                    <div class="col lg-hidden lg-1-1 md-hidden md-1-1 sm-hidden section-3-sixth-item-first-item sm-1-1 xl-hidden xl-1-1">
+                                        <div class="lg-center lg-gutter-16 lg-middle md-center md-gutter-16 md-middle sm-center sm-gutter-16 sm-middle wrap xl-center xl-gutter-16 xl-middle">
+                                            <div class="col lg-2-12 md-2-12 section-3-sixth-item-first-item-first-item sm-2-12 xl-2-12">
+                                                <img class="link-preview-image-in-message-field" src="image/login-page/illustration.png">
+                                            </div>
+                                            <div class="col lg-5-12 md-5-12 section-3-sixth-item-first-item-last-item sm-5-12 xl-5-12">
+                                                <a href="#">Kırmızı Tunik Tunik Tunik Pantalon</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col lg-2-12 md-2-12 section-3-sixth-item-item sm-2-12 xl-1-12">
+                                        <button class="emoji-button">
+                                            <i class="emoji-button-icon far fa-smile"></i>
+                                        </button>
+                                    </div>
+                                    <div class="col lg-8-12 md-8-12 sm-8-12 xl-10-12">
+                                        <div class="message-field" contenteditable="true" data-placeholder="Mesaj yaz..." spellcheck="true"></div>
+                                    </div>
+                                    <div class="col lg-2-12 md-2-12 section-3-sixth-item-item sm-2-12 xl-1-12">
+                                        <button class="message-button">
+                                            <i class="fas fa-paper-plane message-button-icon"></i>
+                                        </button>
+                                    </div>
+                                    <div class="col lg-hidden lg-1-1 md-hidden md-1-1 section-3-sixth-item-last-item sm-hidden sm-1-1 xl-hidden xl-1-1">
+                                        <div class="lg-center md-center sm-center wrap xl-center">
+                                            <div class="col emoji-category emoji-category-active lg-1-8 md-1-8 sm-1-8 xl-1-8" data-group-id="1">
+                                                <button class="emoji-category-button">&#128515;</button>
+                                            </div>
+                                            <div class="col emoji-category lg-1-8 md-1-8 sm-1-8 xl-1-8" data-group-id="2">
+                                                <button class="emoji-category-button">&#128059;</button>
+                                            </div>
+                                            <div class="col emoji-category lg-1-8 md-1-8 sm-1-8 xl-1-8" data-group-id="3">
+                                                <button class="emoji-category-button">&#9749;</button>
+                                            </div>
+                                            <div class="col emoji-category lg-1-8 md-1-8 sm-1-8 xl-1-8" data-group-id="4">
+                                                <button class="emoji-category-button">&#9917;</button>
+                                            </div>
+                                            <div class="col emoji-category lg-1-8 md-1-8 sm-1-8 xl-1-8" data-group-id="5">
+                                                <button class="emoji-category-button">&#128664;</button>
+                                            </div>
+                                            <div class="col emoji-category lg-1-8 md-1-8 sm-1-8 xl-1-8" data-group-id="6">
+                                                <button class="emoji-category-button">&#128161;</button>
+                                            </div>
+                                            <div class="col emoji-category lg-1-8 md-1-8 sm-1-8 xl-1-8" data-group-id="7">
+                                                <button class="emoji-category-button">&#128291;</button>
+                                            </div>
+                                            <div class="col emoji-category lg-1-8 md-1-8 sm-1-8 xl-1-8" data-group-id="8">
+                                                <button class="emoji-category-button">&#127987;</button>
+                                            </div>
+                                            <div class="col emojis lg-1-1 md-1-1 sm-1-1 xl-1-1"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col section-3-item"></div>
+                            <div class="col section-3-item">
+                                <div class="lg-gutter-8 md-gutter-8 section-3-last-item-container sm-gutter-16 wrap xl-gutter-8">
+                                    <div class="col lg-8-12 md-8-12 section-3-last-item-item sm-1-1 xl-10-12">
+                                        <div class="lg-gutter-8 md-gutter-8 section-3-last-item-first-item-container sm-gutter-16 sm-2 wrap xl-gutter-8">
+                                            <div class="col lg-5-12 md-5-12 section-3-last-item-first-item-item xl-5-12">
+                                                <button class="shipping-assistant">+GÖNDERİM ASİSTANI</button>
+                                            </div>
+                                            <div class="col lg-5-12 md-5-12 section-3-last-item-first-item-item xl-4-12">
+                                                <button class="masked-message">MASKELİ MESAJ</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col lg-hidden md-hidden section-3-last-item-item sm-not-hidden sm-1-1 xl-hidden"></div>
+                                    <div class="col lg-2-12 md-2-12 section-3-last-item-item sm-1-2 xl-1-12">
+                                        <button class="image-button">
+                                            <i class="fas fa-image image-button-icon"></i>
+                                        </button>
+                                    </div>
+                                    <div class="col lg-2-12 md-2-12 section-3-last-item-item sm-1-2 xl-1-12">
+                                        <button class="image-button">
+                                            <i class="fas fa-map-marker-alt image-button-icon"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col section-3-item"></div>
+                        </div>
+                    </div>
+                    <div class="col lg-1-1 md-1-1 space xl-1-1"></div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

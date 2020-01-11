@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+        <link href="css/all.min.css" rel="stylesheet">
+        <link href="css/daily.css" rel="stylesheet">
+        <link href="css/flexiblegs-css.min.css" rel="stylesheet">
+        <link href="css/font.css" rel="stylesheet">
+        <link href="css/normalize.min.css" rel="stylesheet">
+        <link href="css/side-menu.css" rel="stylesheet">
+        <meta charset="UTF-8">
+        <meta content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, width=device-width" name="viewport">
+        <script src="js/chart.min.js"></script>
+        <script src="js/jquery-3.4.1.min.js"></script>
+        <script src="js/daily.js"></script>
+        <script src="js/menu.js"></script>
+        <title></title>
+    </head>
+    <body>
+        <div class="lg-table md-table sm-table wrap xl-table">
+            <div class="col lg-hidden md-hidden side-menu sm-hidden">
+                <div class="lg-1 md-1 side-menu-container sm-1 wrap xl-1">
+                    <div class="col side-menu-item">
+                        <a class="link" href="main.html">
+                            <img alt="logo" class="logo" src="image/menu/logo.png">
+                        </a>
+                    </div>
+                    <div class="col side-menu-item">
+                        <a class="link" href="daily.html">
+                            <i class="fas fa-th icon icon-active"></i>
+                        </a>
+                    </div>
+                    <div class="col side-menu-item">
+                        <a class="link" href="main.html">
+                            <i class="fas fa-comments icon"></i>
+                        </a>
+                    </div>
+                    <div class="col side-menu-item">
+                        <a class="link" href="profile.html">
+                            <i class="fas fa-user-circle icon"></i>
+                        </a>
+                    </div>
+                    <div class="col side-menu-item">
+                        <a class="link" href="help.html">
+                            <i class="fas fa-globe-asia icon"></i>
+                        </a>
+                    </div>
+                    <div class="col lg-not-hidden side-menu-item xl-hidden">
+                        <button class="quit-button">
+                            <i class="fas fa-power-off quit-button-icon"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="lg-gutter-24 lg-outside-24 lg-right lg-1 md-gutter-16 md-outside-16 md-right md-1 sm-gutter-8 sm-outside-8 sm-right sm-1 wrap xl-gutter-40 xl-outside-40 xl-right xl-1">
+                    <div class="col space"></div>
+                    <div class="col">
+                        <button class="exit-button">
+                            <i class="exit-button-icon fas fa-power-off"></i>
+                        </button>
+                        <button class="hamburger-menu-open">
+                            <i class="fas fa-bars hamburger-menu-open-icon"></i>
+                        </button>
+                        <button class="hamburger-menu-close">
+                            <i class="fas fa-times hamburger-menu-close-icon"></i>
+                        </button>
+                    </div>
+                    <div class="col space"></div>
+                    <div class="col">
+                        <div class="lg-1 md-1 sm-1 wrap xl-1">
+                            <div class="col section-1-first-item">
+                                <span class="main-label">Günlük Mesajlaşma Çizelgesi</span>
+                            </div>
+                            <div class="col section-1-last-item">
+                                <div class="daily-messaging-chart-container">
+                                    <canvas id="daily-messaging"></canvas>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col space"></div>
+                    <div class="col">
+                        <div class="lg-1 md-1 sm-1 wrap xl-1">
+                            <div class="col section-2-first-item">
+                                <span class="main-label">İlgili Sosyal Medyalardan Gelen Kullanıcı Sayısı</span>
+                            </div>
+                            <div class="col section-2-last-item">
+                                <div class="lg-1 md-1 sm-1 wrap xl-1">
+                                    <div class="col section-2-last-item-item">
+                                        <div class="lg-gutter-24 lg-outside-16 lg-5 md-gutter-16 md-outside-8 md-5 sm-gutter-8 sm-outside-8 sm-5 wrap xl-gutter-40 xl-outside-24 xl-5">
+                                            <div class="col">
+                                                <span class="sublabel">Sosyal Mecra</span>
+                                            </div>
+                                            <div class="col">
+                                                <span class="sublabel">Popülarite</span>
+                                            </div>
+                                            <div class="col">
+                                                <span class="sublabel">Değişim Grafiği</span>
+                                            </div>
+                                            <div class="col">
+                                                <span class="sublabel">Günlük Ortalama Mesaj</span>
+                                            </div>
+                                            <div class="col">
+                                                <span class="sublabel">Toplam Mesaj</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col section-2-last-item-item">
+                                        <div class="lg-gutter-24 lg-middle lg-outside-16 lg-5 md-gutter-16 md-middle md-outside-8 md-5 sm-gutter-8 sm-middle sm-outside-8 sm-5 wrap xl-gutter-40 xl-middle xl-outside-24 xl-5">
+                                            <div class="col">
+                                                <div class="lg-gutter-8 lg-middle lg-table md-gutter-8 md-middle md-table sm-gutter-0 sm-normal wrap xl-gutter-8 xl-middle xl-table">
+                                                    <div class="col section-2-last-item-item-first-item-first-item">
+                                                        <i class="fab facebook-messenger-icon fa-facebook-messenger"></i>
+                                                    </div>
+                                                    <div class="col sm-hidden">
+                                                        <span>Facebook Messenger</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <span>%30</span>
+                                            </div>
+                                            <div class="col">
+                                                <div class="section-2-chart-container">
+                                                    <canvas id="facebook-messenger-change"></canvas>
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <span>188</span>
+                                            </div>
+                                            <div class="col">
+                                                <span>12,773</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col section-2-last-item-item">
+                                        <div class="lg-gutter-24 lg-middle lg-outside-16 lg-5 md-gutter-16 md-middle md-outside-8 md-5 sm-gutter-8 sm-middle sm-outside-8 sm-5 wrap xl-gutter-40 xl-middle xl-outside-24 xl-5">
+                                            <div class="col">
+                                                <div class="lg-gutter-8 lg-middle lg-table md-gutter-8 md-middle md-table sm-gutter-0 sm-normal wrap xl-gutter-8 xl-middle xl-table">
+                                                    <div class="col section-2-last-item-item-first-item-first-item">
+                                                        <i class="fab fa-whatsapp whatsapp-icon"></i>
+                                                    </div>
+                                                    <div class="col sm-hidden">
+                                                        <span>WhatsApp</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <span>%41</span>
+                                            </div>
+                                            <div class="col">
+                                                <div class="section-2-chart-container">
+                                                    <canvas id="whatsapp-change"></canvas>
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <span>355</span>
+                                            </div>
+                                            <div class="col">
+                                                <span>10,886</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col space"></div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

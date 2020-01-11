@@ -1,0 +1,73 @@
+.side-menu {
+    width: 50px;
+}
+
+.side-menu-container {
+    background-color: #272421;
+    height: 100vh;
+    max-height: 1270px;
+    min-height: 845px;
+    position: fixed;
+    width: 50px;
+}
+
+.side-menu-item {
+    height: 7%;
+}
+
+.side-menu-item:first-child {
+    height: 12%;
+}
+
+.link {
+    align-items: center;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    pointer-events: none;
+    text-decoration: none;
+    width: 100%;
+}
+
+.link:hover > .icon {
+    font-size: 25px;
+}
+
+.logo {
+    height: 50%;
+    pointer-events: auto;
+    width: 50%;
+}
+
+.icon {
+    color: #d9d9d9;
+    font-size: 20px;
+    pointer-events: auto;
+}
+
+.icon-active {
+    color: #37b349;
+}
+
+.quit-button {
+    background: none;
+    border: none;
+    height: 100%;
+    margin: 0;
+    outline: none;
+    padding: 0;
+    pointer-events: none;
+    width: 100%;
+}
+
+.quit-button:hover > .quit-button-icon {
+    font-size: 25px;
+}
+
+.quit-button-icon {
+    color: #f33a3f;
+    cursor: pointer;
+    font-size: 20px;
+    pointer-events: auto;
+    width: 100%;
+}
