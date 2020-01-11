@@ -1,7 +1,7 @@
 body {
     align-items: center;
     background: center center fixed no-repeat url("../image/login-page/background.png");
-    background-size: 100vw 100vh;
+    /*background-size: 100vw 100vh;*/
     display: flex;
     font-family: "PT Sans", sans-serif;
     height: 100vh;
