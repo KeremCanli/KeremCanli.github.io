@@ -253,8 +253,7 @@ body {
 
 @media (max-width: 667px) {
     body {
-        /*min-height: 818px;*/
-        min-height: 682px;
+        min-height: 652px;
     }
 
     .login {
